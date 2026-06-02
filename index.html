@@ -32,15 +32,12 @@
   }
 
   /* ─── X & O CHALK PATTERNS ─── */
-
-  /* Dark sections: faint white X's and O's (like chalk on blackboard) */
   .xo-dark {
     background-color: var(--black);
-    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='240' height='240'%3E%3C!-- O circles --%3E%3Ccircle cx='38' cy='38' r='14' fill='none' stroke='rgba(255,255,255,0.08)' stroke-width='2.5'/%3E%3Ccircle cx='145' cy='95' r='14' fill='none' stroke='rgba(255,255,255,0.06)' stroke-width='2.5'/%3E%3Ccircle cx='85' cy='175' r='14' fill='none' stroke='rgba(255,255,255,0.08)' stroke-width='2.5'/%3E%3Ccircle cx='200' cy='50' r='10' fill='none' stroke='rgba(255,255,255,0.05)' stroke-width='2'/%3E%3Ccircle cx='210' cy='170' r='12' fill='none' stroke='rgba(255,255,255,0.06)' stroke-width='2'/%3E%3C!-- X marks --%3E%3Cline x1='163' y1='22' x2='183' y2='42' stroke='rgba(255,255,255,0.08)' stroke-width='2.5' stroke-linecap='round'/%3E%3Cline x1='183' y1='22' x2='163' y2='42' stroke='rgba(255,255,255,0.08)' stroke-width='2.5' stroke-linecap='round'/%3E%3Cline x1='15' y1='108' x2='35' y2='128' stroke='rgba(255,255,255,0.08)' stroke-width='2.5' stroke-linecap='round'/%3E%3Cline x1='35' y1='108' x2='15' y2='128' stroke='rgba(255,255,255,0.08)' stroke-width='2.5' stroke-linecap='round'/%3E%3Cline x1='108' y1='118' x2='128' y2='138' stroke='rgba(255,255,255,0.07)' stroke-width='2.5' stroke-linecap='round'/%3E%3Cline x1='128' y1='118' x2='108' y2='138' stroke='rgba(255,255,255,0.07)' stroke-width='2.5' stroke-linecap='round'/%3E%3Cline x1='50' y1='210' x2='70' y2='230' stroke='rgba(255,255,255,0.05)' stroke-width='2' stroke-linecap='round'/%3E%3Cline x1='70' y1='210' x2='50' y2='230' stroke='rgba(255,255,255,0.05)' stroke-width='2' stroke-linecap='round'/%3E%3C!-- dashed connecting lines --%3E%3Cline x1='52' y1='38' x2='131' y2='90' stroke='rgba(255,255,255,0.04)' stroke-width='1.5' stroke-dasharray='6,5'/%3E%3Cline x1='99' y1='161' x2='145' y2='109' stroke='rgba(255,255,255,0.04)' stroke-width='1.5' stroke-dasharray='6,5'/%3E%3Cline x1='145' y1='109' x2='173' y2='42' stroke='rgba(255,255,255,0.03)' stroke-width='1.5' stroke-dasharray='6,5'/%3E%3C/svg%3E");
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='240' height='240'%3E%3Ccircle cx='38' cy='38' r='14' fill='none' stroke='rgba(255,255,255,0.08)' stroke-width='2.5'/%3E%3Ccircle cx='145' cy='95' r='14' fill='none' stroke='rgba(255,255,255,0.06)' stroke-width='2.5'/%3E%3Ccircle cx='85' cy='175' r='14' fill='none' stroke='rgba(255,255,255,0.08)' stroke-width='2.5'/%3E%3Ccircle cx='200' cy='50' r='10' fill='none' stroke='rgba(255,255,255,0.05)' stroke-width='2'/%3E%3Ccircle cx='210' cy='170' r='12' fill='none' stroke='rgba(255,255,255,0.06)' stroke-width='2'/%3E%3Cline x1='163' y1='22' x2='183' y2='42' stroke='rgba(255,255,255,0.08)' stroke-width='2.5' stroke-linecap='round'/%3E%3Cline x1='183' y1='22' x2='163' y2='42' stroke='rgba(255,255,255,0.08)' stroke-width='2.5' stroke-linecap='round'/%3E%3Cline x1='15' y1='108' x2='35' y2='128' stroke='rgba(255,255,255,0.08)' stroke-width='2.5' stroke-linecap='round'/%3E%3Cline x1='35' y1='108' x2='15' y2='128' stroke='rgba(255,255,255,0.08)' stroke-width='2.5' stroke-linecap='round'/%3E%3Cline x1='108' y1='118' x2='128' y2='138' stroke='rgba(255,255,255,0.07)' stroke-width='2.5' stroke-linecap='round'/%3E%3Cline x1='128' y1='118' x2='108' y2='138' stroke='rgba(255,255,255,0.07)' stroke-width='2.5' stroke-linecap='round'/%3E%3Cline x1='50' y1='210' x2='70' y2='230' stroke='rgba(255,255,255,0.05)' stroke-width='2' stroke-linecap='round'/%3E%3Cline x1='70' y1='210' x2='50' y2='230' stroke='rgba(255,255,255,0.05)' stroke-width='2' stroke-linecap='round'/%3E%3Cline x1='52' y1='38' x2='131' y2='90' stroke='rgba(255,255,255,0.04)' stroke-width='1.5' stroke-dasharray='6,5'/%3E%3Cline x1='99' y1='161' x2='145' y2='109' stroke='rgba(255,255,255,0.04)' stroke-width='1.5' stroke-dasharray='6,5'/%3E%3Cline x1='145' y1='109' x2='173' y2='42' stroke='rgba(255,255,255,0.03)' stroke-width='1.5' stroke-dasharray='6,5'/%3E%3C/svg%3E");
     background-repeat: repeat;
   }
 
-  /* Light sections: very faint dark X's and O's on white */
   .xo-light {
     background-color: var(--white);
     background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='240' height='240'%3E%3Ccircle cx='38' cy='38' r='14' fill='none' stroke='rgba(20,20,20,0.04)' stroke-width='2.5'/%3E%3Ccircle cx='145' cy='95' r='14' fill='none' stroke='rgba(20,20,20,0.03)' stroke-width='2.5'/%3E%3Ccircle cx='85' cy='175' r='14' fill='none' stroke='rgba(20,20,20,0.04)' stroke-width='2.5'/%3E%3Ccircle cx='200' cy='50' r='10' fill='none' stroke='rgba(20,20,20,0.03)' stroke-width='2'/%3E%3Ccircle cx='210' cy='170' r='12' fill='none' stroke='rgba(20,20,20,0.03)' stroke-width='2'/%3E%3Cline x1='163' y1='22' x2='183' y2='42' stroke='rgba(20,20,20,0.04)' stroke-width='2.5' stroke-linecap='round'/%3E%3Cline x1='183' y1='22' x2='163' y2='42' stroke='rgba(20,20,20,0.04)' stroke-width='2.5' stroke-linecap='round'/%3E%3Cline x1='15' y1='108' x2='35' y2='128' stroke='rgba(20,20,20,0.04)' stroke-width='2.5' stroke-linecap='round'/%3E%3Cline x1='35' y1='108' x2='15' y2='128' stroke='rgba(20,20,20,0.04)' stroke-width='2.5' stroke-linecap='round'/%3E%3Cline x1='108' y1='118' x2='128' y2='138' stroke='rgba(20,20,20,0.04)' stroke-width='2.5' stroke-linecap='round'/%3E%3Cline x1='128' y1='118' x2='108' y2='138' stroke='rgba(20,20,20,0.04)' stroke-width='2.5' stroke-linecap='round'/%3E%3Cline x1='52' y1='38' x2='131' y2='90' stroke='rgba(20,20,20,0.02)' stroke-width='1.5' stroke-dasharray='6,5'/%3E%3Cline x1='99' y1='161' x2='145' y2='109' stroke='rgba(20,20,20,0.02)' stroke-width='1.5' stroke-dasharray='6,5'/%3E%3C/svg%3E");
@@ -95,7 +92,7 @@
     overflow: hidden;
   }
   .hero-inner {
-    max-width: 980px;
+    max-width: 1080px;
     margin: 0 auto;
     display: flex;
     align-items: center;
@@ -173,16 +170,15 @@
   }
   .hero-cover { flex-shrink: 0; }
   .hero-cover img {
-    width: 300px;
+    width: 420px;
     border-radius: 8px;
     transform: rotate(2.5deg);
     box-shadow: 0 30px 70px rgba(0,0,0,0.75), 0 0 0 1px rgba(245,197,0,0.15);
     display: block;
   }
-  /* placeholder box when no cover image */
   .cover-placeholder {
-    width: 210px;
-    height: 280px;
+    width: 420px;
+    height: 560px;
     background: #222;
     border: 2px dashed #444;
     border-radius: 8px;
@@ -331,41 +327,6 @@
     font-weight: 700;
   }
 
-  /* ─── REAL NUMBERS ─── */
-  .numbers-grid {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 16px;
-    margin-top: 32px;
-  }
-  .number-card {
-    border: 1px solid var(--border);
-    border-radius: 10px;
-    padding: 28px 20px;
-    text-align: center;
-    background: var(--off);
-  }
-  .number-card.win {
-    border: 2px solid var(--yellow);
-    background: #FFFBEC;
-  }
-  .number-card .big-num {
-    font-family: 'Anton', sans-serif;
-    font-size: clamp(34px, 5.5vw, 50px);
-    color: var(--mid);
-    display: block;
-    line-height: 1;
-    margin-bottom: 8px;
-  }
-  .number-card.win .big-num { color: var(--black); }
-  .number-card .num-label {
-    font-size: 12px;
-    color: var(--light);
-    line-height: 1.4;
-    font-weight: 500;
-  }
-  .number-card.win .num-label { color: var(--mid); }
-
   /* ─── AUTHOR ─── */
   .author-card {
     background: var(--black);
@@ -502,7 +463,7 @@
   .contact-btn:hover { border-color: var(--yellow); color: var(--yellow); background: rgba(245,197,0,0.08); }
   .contact-btn svg { width: 16px; height: 16px; flex-shrink: 0; }
 
-  /* ─── RED STRIPE (like cover author banner) ─── */
+  /* ─── RED STRIPE ─── */
   .red-stripe {
     background: var(--red);
     padding: 20px 28px;
@@ -541,10 +502,7 @@
     text-transform: uppercase;
   }
   .footer-brand .script { color: var(--yellow); font-family: 'Inter', sans-serif; font-style: italic; font-weight: 700; }
-  .footer-links {
-    font-size: 12px;
-    color: rgba(255,255,255,0.28);
-  }
+  .footer-links { font-size: 12px; color: rgba(255,255,255,0.28); }
   .footer-links a { color: rgba(255,255,255,0.38); text-decoration: none; }
   .footer-links a:hover { color: var(--yellow); }
 
@@ -553,9 +511,8 @@
     .hero-inner { flex-direction: column-reverse; gap: 36px; }
     .hero-text { text-align: center; }
     .hero-sub { margin: 0 auto 28px; }
-    .hero-cover img { width: 170px; }
-    .cover-placeholder { width: 170px; height: 227px; }
-    .numbers-grid { gap: 10px; }
+    .hero-cover img { width: 220px; }
+    .cover-placeholder { width: 220px; height: 293px; }
     .author-card { flex-direction: column; padding: 24px 20px; }
     .proof-numbers { gap: 24px; }
     nav { padding: 13px 16px; }
@@ -572,7 +529,7 @@
   <a href="https://cultivar4.gumroad.com/l/foodvendorplaybook?wanted=true&utm_source=website&utm_medium=landing_page&utm_campaign=fvp" class="nav-cta" target="_blank">Get It — $20 →</a>
 </nav>
 
-<!-- ─── HERO (dark + X/O pattern) ─── -->
+<!-- ─── HERO ─── -->
 <div class="hero xo-dark">
   <div class="hero-inner">
     <div class="hero-text">
@@ -612,10 +569,9 @@
   </div>
 </div>
 
-<!-- ─── WHITE CONTENT SECTIONS (with subtle X/O pattern) ─── -->
+<!-- ─── WHITE CONTENT SECTIONS ─── -->
 <div class="sections-wrap xo-light">
 
-  <!-- WHAT'S INSIDE -->
   <section>
     <p class="section-eyebrow">What's inside</p>
     <h2 class="section-title">No theory. No fluff.</h2>
@@ -643,7 +599,7 @@
       </li>
       <li>
         <span class="check-icon"><svg viewBox="0 0 13 10" fill="none"><path d="M1 5l3.5 3.5L12 1" stroke="#141414" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
-        Real numbers: a $10,882 weekend and a $521 weekend, both broken down line by line
+        Real numbers: a $10,882 strong weekend and a $521 slow weekend, both broken down line by line
       </li>
       <li>
         <span class="check-icon"><svg viewBox="0 0 13 10" fill="none"><path d="M1 5l3.5 3.5L12 1" stroke="#141414" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
@@ -674,7 +630,6 @@
 
   <hr class="section-divider">
 
-  <!-- WHO IT'S FOR -->
   <section>
     <p class="section-eyebrow">Who this is for</p>
     <h2 class="section-title">This guide is for you if</h2>
@@ -686,8 +641,6 @@
     </ul>
   </section>
 
-
-  <!-- AUTHOR -->
   <section>
     <p class="section-eyebrow">About the author</p>
     <h2 class="section-title">Built from real experience</h2>
@@ -708,7 +661,6 @@
 
   <hr class="section-divider">
 
-  <!-- WHAT YOU GET -->
   <section>
     <p class="section-eyebrow">What you get</p>
     <h2 class="section-title">Instant download</h2>
@@ -719,15 +671,15 @@
     </div>
   </section>
 
-</div><!-- end .sections-wrap -->
+</div>
 
-<!-- ─── CTA SECTION (dark + X/O pattern) ─── -->
+<!-- ─── CTA SECTION ─── -->
 <div class="cta-section xo-dark">
   <div class="cta-inner">
     <p class="section-eyebrow">Get the playbook</p>
     <h2 class="section-title">From your first event to a profitable pop-up business.</h2>
     <p class="price-line">One bad event can cost you $500+ in wasted product, fees, and time. This guide is only $20 — and it'll save you money and help you make fewer mistakes.</p>
-    <p class="price-sub">39 pages · Instant PDF download · Event Day Checklist included · Instant download after purchase</p>
+    <p class="price-sub">39 pages · Instant PDF download · Event Day Checklist included</p>
     <a href="https://cultivar4.gumroad.com/l/foodvendorplaybook?wanted=true&utm_source=website&utm_medium=landing_page&utm_campaign=fvp" class="big-cta" target="_blank">Get the Playbook — $20 →</a>
     <p style="font-size:13px; color:rgba(255,255,255,0.35); margin-top:28px; margin-bottom:10px; text-transform:uppercase; letter-spacing:0.1em; font-weight:600;">Have a question?</p>
     <div class="cta-contact">
@@ -743,7 +695,7 @@
   </div>
 </div>
 
-<!-- ─── RED STRIPE (mirrors cover author banner) ─── -->
+<!-- ─── RED STRIPE ─── -->
 <div class="red-stripe">
   <p>By Yorman Sanchez</p>
   <span>Chef &amp; Owner, Cultivar Hospitality LLC | ChKn M.I.A.</span>
