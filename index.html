@@ -1,0 +1,783 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>The Food Vendor Playbook — From Your First Event to a Profitable Pop-Up Business</title>
+<meta name="description" content="The business side nobody teaches you. 39 pages. Real numbers. No fluff. Built from years running food pop-ups.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Anton&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+  *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+  :root {
+    --black:    #141414;
+    --yellow:   #F5C500;
+    --red:      #E63946;
+    --white:    #FFFFFF;
+    --off:      #F7F7F7;
+    --border:   #E0E0E0;
+    --text:     #1A1A1A;
+    --mid:      #555555;
+    --light:    #888888;
+  }
+
+  body {
+    background: var(--white);
+    color: var(--text);
+    font-family: 'Inter', sans-serif;
+    font-size: 16px;
+    line-height: 1.6;
+    -webkit-font-smoothing: antialiased;
+  }
+
+  /* ─── X & O CHALK PATTERNS ─── */
+
+  /* Dark sections: faint white X's and O's (like chalk on blackboard) */
+  .xo-dark {
+    background-color: var(--black);
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='240' height='240'%3E%3C!-- O circles --%3E%3Ccircle cx='38' cy='38' r='14' fill='none' stroke='rgba(255,255,255,0.08)' stroke-width='2.5'/%3E%3Ccircle cx='145' cy='95' r='14' fill='none' stroke='rgba(255,255,255,0.06)' stroke-width='2.5'/%3E%3Ccircle cx='85' cy='175' r='14' fill='none' stroke='rgba(255,255,255,0.08)' stroke-width='2.5'/%3E%3Ccircle cx='200' cy='50' r='10' fill='none' stroke='rgba(255,255,255,0.05)' stroke-width='2'/%3E%3Ccircle cx='210' cy='170' r='12' fill='none' stroke='rgba(255,255,255,0.06)' stroke-width='2'/%3E%3C!-- X marks --%3E%3Cline x1='163' y1='22' x2='183' y2='42' stroke='rgba(255,255,255,0.08)' stroke-width='2.5' stroke-linecap='round'/%3E%3Cline x1='183' y1='22' x2='163' y2='42' stroke='rgba(255,255,255,0.08)' stroke-width='2.5' stroke-linecap='round'/%3E%3Cline x1='15' y1='108' x2='35' y2='128' stroke='rgba(255,255,255,0.08)' stroke-width='2.5' stroke-linecap='round'/%3E%3Cline x1='35' y1='108' x2='15' y2='128' stroke='rgba(255,255,255,0.08)' stroke-width='2.5' stroke-linecap='round'/%3E%3Cline x1='108' y1='118' x2='128' y2='138' stroke='rgba(255,255,255,0.07)' stroke-width='2.5' stroke-linecap='round'/%3E%3Cline x1='128' y1='118' x2='108' y2='138' stroke='rgba(255,255,255,0.07)' stroke-width='2.5' stroke-linecap='round'/%3E%3Cline x1='50' y1='210' x2='70' y2='230' stroke='rgba(255,255,255,0.05)' stroke-width='2' stroke-linecap='round'/%3E%3Cline x1='70' y1='210' x2='50' y2='230' stroke='rgba(255,255,255,0.05)' stroke-width='2' stroke-linecap='round'/%3E%3C!-- dashed connecting lines --%3E%3Cline x1='52' y1='38' x2='131' y2='90' stroke='rgba(255,255,255,0.04)' stroke-width='1.5' stroke-dasharray='6,5'/%3E%3Cline x1='99' y1='161' x2='145' y2='109' stroke='rgba(255,255,255,0.04)' stroke-width='1.5' stroke-dasharray='6,5'/%3E%3Cline x1='145' y1='109' x2='173' y2='42' stroke='rgba(255,255,255,0.03)' stroke-width='1.5' stroke-dasharray='6,5'/%3E%3C/svg%3E");
+    background-repeat: repeat;
+  }
+
+  /* Light sections: very faint dark X's and O's on white */
+  .xo-light {
+    background-color: var(--white);
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='240' height='240'%3E%3Ccircle cx='38' cy='38' r='14' fill='none' stroke='rgba(20,20,20,0.04)' stroke-width='2.5'/%3E%3Ccircle cx='145' cy='95' r='14' fill='none' stroke='rgba(20,20,20,0.03)' stroke-width='2.5'/%3E%3Ccircle cx='85' cy='175' r='14' fill='none' stroke='rgba(20,20,20,0.04)' stroke-width='2.5'/%3E%3Ccircle cx='200' cy='50' r='10' fill='none' stroke='rgba(20,20,20,0.03)' stroke-width='2'/%3E%3Ccircle cx='210' cy='170' r='12' fill='none' stroke='rgba(20,20,20,0.03)' stroke-width='2'/%3E%3Cline x1='163' y1='22' x2='183' y2='42' stroke='rgba(20,20,20,0.04)' stroke-width='2.5' stroke-linecap='round'/%3E%3Cline x1='183' y1='22' x2='163' y2='42' stroke='rgba(20,20,20,0.04)' stroke-width='2.5' stroke-linecap='round'/%3E%3Cline x1='15' y1='108' x2='35' y2='128' stroke='rgba(20,20,20,0.04)' stroke-width='2.5' stroke-linecap='round'/%3E%3Cline x1='35' y1='108' x2='15' y2='128' stroke='rgba(20,20,20,0.04)' stroke-width='2.5' stroke-linecap='round'/%3E%3Cline x1='108' y1='118' x2='128' y2='138' stroke='rgba(20,20,20,0.04)' stroke-width='2.5' stroke-linecap='round'/%3E%3Cline x1='128' y1='118' x2='108' y2='138' stroke='rgba(20,20,20,0.04)' stroke-width='2.5' stroke-linecap='round'/%3E%3Cline x1='52' y1='38' x2='131' y2='90' stroke='rgba(20,20,20,0.02)' stroke-width='1.5' stroke-dasharray='6,5'/%3E%3Cline x1='99' y1='161' x2='145' y2='109' stroke='rgba(20,20,20,0.02)' stroke-width='1.5' stroke-dasharray='6,5'/%3E%3C/svg%3E");
+    background-repeat: repeat;
+  }
+
+  /* ─── NAV ─── */
+  nav {
+    background: var(--black);
+    padding: 15px 28px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    border-bottom: 3px solid var(--yellow);
+  }
+  .nav-brand {
+    font-family: 'Anton', sans-serif;
+    font-size: 17px;
+    letter-spacing: 0.04em;
+    color: var(--white);
+    text-decoration: none;
+    text-transform: uppercase;
+  }
+  .nav-brand .script {
+    color: var(--yellow);
+    font-family: 'Inter', sans-serif;
+    font-style: italic;
+    font-weight: 700;
+    font-size: 1.1em;
+  }
+  .nav-cta {
+    background: var(--red);
+    color: var(--white);
+    font-size: 13px;
+    font-weight: 700;
+    padding: 9px 22px;
+    border-radius: 4px;
+    text-decoration: none;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+    transition: opacity 0.15s;
+  }
+  .nav-cta:hover { opacity: 0.85; }
+
+  /* ─── HERO ─── */
+  .hero {
+    padding: 72px 24px 64px;
+    position: relative;
+    overflow: hidden;
+  }
+  .hero-inner {
+    max-width: 980px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    gap: 64px;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .hero-text { flex: 1; min-width: 290px; }
+  .hero-tag {
+    display: inline-block;
+    background: var(--yellow);
+    color: var(--black);
+    font-size: 10px;
+    font-weight: 700;
+    letter-spacing: 0.14em;
+    text-transform: uppercase;
+    padding: 5px 14px;
+    border-radius: 3px;
+    margin-bottom: 20px;
+  }
+  .hero h1 {
+    font-family: 'Anton', sans-serif;
+    font-size: clamp(46px, 8.5vw, 86px);
+    line-height: 0.95;
+    letter-spacing: 0.01em;
+    text-transform: uppercase;
+    color: var(--white);
+    margin-bottom: 8px;
+  }
+  .hero h1 .script-word {
+    display: block;
+    font-family: 'Inter', sans-serif;
+    font-weight: 700;
+    font-style: italic;
+    color: var(--yellow);
+    text-transform: none;
+    font-size: 0.82em;
+    line-height: 1.1;
+  }
+  .hero-tagline {
+    font-size: 11px;
+    font-weight: 700;
+    letter-spacing: 0.16em;
+    text-transform: uppercase;
+    color: rgba(255,255,255,0.45);
+    margin-bottom: 20px;
+    margin-top: 4px;
+  }
+  .hero-sub {
+    font-size: clamp(15px, 2vw, 17px);
+    color: rgba(255,255,255,0.62);
+    max-width: 480px;
+    line-height: 1.65;
+    margin-bottom: 32px;
+  }
+  .hero-cta {
+    display: inline-block;
+    background: var(--red);
+    color: var(--white);
+    font-size: 16px;
+    font-weight: 700;
+    padding: 17px 44px;
+    border-radius: 4px;
+    text-decoration: none;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+    transition: opacity 0.15s;
+  }
+  .hero-cta:hover { opacity: 0.87; }
+  .hero-price {
+    display: block;
+    margin-top: 10px;
+    font-size: 12px;
+    color: rgba(255,255,255,0.35);
+  }
+  .hero-cover { flex-shrink: 0; }
+  .hero-cover img {
+    width: 210px;
+    border-radius: 8px;
+    transform: rotate(2.5deg);
+    box-shadow: 0 30px 70px rgba(0,0,0,0.75), 0 0 0 1px rgba(245,197,0,0.15);
+    display: block;
+  }
+  /* placeholder box when no cover image */
+  .cover-placeholder {
+    width: 210px;
+    height: 280px;
+    background: #222;
+    border: 2px dashed #444;
+    border-radius: 8px;
+    transform: rotate(2.5deg);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 12px;
+    color: #555;
+    text-align: center;
+    padding: 16px;
+  }
+
+  /* ─── PROOF BANNER ─── */
+  .proof-banner {
+    background: var(--yellow);
+    padding: 40px 24px;
+    text-align: center;
+  }
+  .proof-banner .label-top {
+    font-size: 10px;
+    font-weight: 700;
+    letter-spacing: 0.14em;
+    text-transform: uppercase;
+    color: rgba(20,20,20,0.5);
+    margin-bottom: 20px;
+  }
+  .proof-numbers {
+    display: flex;
+    justify-content: center;
+    gap: 52px;
+    flex-wrap: wrap;
+  }
+  .proof-num { text-align: center; }
+  .proof-num .num {
+    font-family: 'Anton', sans-serif;
+    font-size: 46px;
+    color: var(--black);
+    display: block;
+    line-height: 1;
+  }
+  .proof-num .sub {
+    font-size: 11px;
+    color: rgba(20,20,20,0.55);
+    margin-top: 5px;
+    display: block;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.06em;
+    max-width: 160px;
+  }
+
+  /* ─── WHITE SECTIONS ─── */
+  .sections-wrap { background: var(--white); }
+
+  section {
+    max-width: 780px;
+    margin: 0 auto;
+    padding: 64px 24px;
+    position: relative;
+    z-index: 1;
+  }
+  .section-divider {
+    max-width: 780px;
+    margin: 0 auto;
+    border: none;
+    border-top: 1px solid var(--border);
+    padding: 0 24px;
+  }
+  .section-eyebrow {
+    font-size: 10px;
+    font-weight: 700;
+    letter-spacing: 0.14em;
+    text-transform: uppercase;
+    color: var(--red);
+    margin-bottom: 10px;
+  }
+  .section-title {
+    font-family: 'Anton', sans-serif;
+    font-size: clamp(28px, 5vw, 44px);
+    text-transform: uppercase;
+    line-height: 1.0;
+    color: var(--black);
+    margin-bottom: 16px;
+  }
+  .section-body {
+    font-size: 17px;
+    color: var(--mid);
+    line-height: 1.75;
+  }
+  .section-body p { margin-bottom: 16px; }
+  .section-body p:last-child { margin-bottom: 0; }
+
+  /* ─── CHECKLIST ─── */
+  .checklist {
+    list-style: none;
+    padding: 0;
+    margin: 28px 0 0;
+  }
+  .checklist li {
+    display: flex;
+    gap: 14px;
+    align-items: flex-start;
+    padding: 14px 0;
+    border-bottom: 1px solid var(--border);
+    font-size: 15px;
+    color: var(--text);
+    line-height: 1.5;
+  }
+  .checklist li:last-child { border-bottom: none; }
+  .check-icon {
+    width: 22px;
+    height: 22px;
+    background: var(--yellow);
+    border-radius: 3px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+    margin-top: 1px;
+  }
+  .check-icon svg { width: 13px; height: 13px; }
+
+  /* ─── FOR YOU ─── */
+  .for-you-list {
+    list-style: none;
+    padding: 0;
+    margin: 24px 0 0;
+  }
+  .for-you-list li {
+    display: flex;
+    gap: 14px;
+    align-items: flex-start;
+    padding: 15px 0;
+    border-bottom: 1px solid var(--border);
+    font-size: 16px;
+    color: var(--text);
+    line-height: 1.5;
+  }
+  .for-you-list li:last-child { border-bottom: none; }
+  .arrow {
+    color: var(--red);
+    font-size: 18px;
+    line-height: 1.5;
+    flex-shrink: 0;
+    font-weight: 700;
+  }
+
+  /* ─── REAL NUMBERS ─── */
+  .numbers-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 16px;
+    margin-top: 32px;
+  }
+  .number-card {
+    border: 1px solid var(--border);
+    border-radius: 10px;
+    padding: 28px 20px;
+    text-align: center;
+    background: var(--off);
+  }
+  .number-card.win {
+    border: 2px solid var(--yellow);
+    background: #FFFBEC;
+  }
+  .number-card .big-num {
+    font-family: 'Anton', sans-serif;
+    font-size: clamp(34px, 5.5vw, 50px);
+    color: var(--mid);
+    display: block;
+    line-height: 1;
+    margin-bottom: 8px;
+  }
+  .number-card.win .big-num { color: var(--black); }
+  .number-card .num-label {
+    font-size: 12px;
+    color: var(--light);
+    line-height: 1.4;
+    font-weight: 500;
+  }
+  .number-card.win .num-label { color: var(--mid); }
+
+  /* ─── AUTHOR ─── */
+  .author-card {
+    background: var(--black);
+    border-radius: 12px;
+    padding: 36px 32px;
+    display: flex;
+    gap: 28px;
+    align-items: flex-start;
+    margin-top: 8px;
+  }
+  .author-avatar {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    background: var(--yellow);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Anton', sans-serif;
+    font-size: 28px;
+    color: var(--black);
+    flex-shrink: 0;
+    border: 3px solid var(--yellow);
+    overflow: hidden;
+  }
+  .author-avatar img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center top;
+    border-radius: 50%;
+  }
+  .author-name {
+    font-family: 'Anton', sans-serif;
+    font-size: 22px;
+    letter-spacing: 0.03em;
+    color: var(--white);
+    margin-bottom: 3px;
+  }
+  .author-role {
+    font-size: 11px;
+    color: var(--yellow);
+    font-weight: 700;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    margin-bottom: 14px;
+  }
+  .author-bio {
+    font-size: 15px;
+    color: rgba(255,255,255,0.65);
+    line-height: 1.7;
+  }
+  .author-bio p + p { margin-top: 12px; }
+
+  /* ─── WHAT YOU GET ─── */
+  .get-grid {
+    display: flex;
+    gap: 12px;
+    flex-wrap: wrap;
+    margin-top: 28px;
+  }
+  .get-pill {
+    background: var(--white);
+    border: 2px solid var(--black);
+    border-radius: 40px;
+    padding: 10px 22px;
+    font-size: 14px;
+    font-weight: 600;
+    color: var(--black);
+    display: flex;
+    align-items: center;
+    gap: 8px;
+  }
+  .get-pill .icon { font-size: 16px; }
+
+  /* ─── CTA SECTION ─── */
+  .cta-section {
+    padding: 88px 24px;
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+  }
+  .cta-inner { max-width: 560px; margin: 0 auto; position: relative; z-index: 1; }
+  .cta-section .section-eyebrow { color: var(--yellow); }
+  .cta-section .section-title { color: var(--white); margin-bottom: 12px; }
+  .price-line {
+    font-size: 16px;
+    color: rgba(255,255,255,0.6);
+    margin-bottom: 8px;
+    line-height: 1.6;
+  }
+  .price-sub {
+    font-size: 12px;
+    color: rgba(255,255,255,0.35);
+    margin-bottom: 28px;
+    font-style: italic;
+  }
+  .big-cta {
+    display: inline-block;
+    background: var(--red);
+    color: var(--white);
+    font-size: 17px;
+    font-weight: 700;
+    padding: 20px 56px;
+    border-radius: 4px;
+    text-decoration: none;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+    transition: opacity 0.15s;
+  }
+  .big-cta:hover { opacity: 0.87; }
+  .cta-contact {
+    display: flex;
+    justify-content: center;
+    gap: 16px;
+    flex-wrap: wrap;
+    margin-top: 28px;
+  }
+  .contact-btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 9px;
+    padding: 12px 22px;
+    border-radius: 40px;
+    font-size: 14px;
+    font-weight: 600;
+    text-decoration: none;
+    letter-spacing: 0.02em;
+    transition: opacity 0.15s;
+    border: 2px solid rgba(255,255,255,0.2);
+    color: var(--white);
+    background: rgba(255,255,255,0.07);
+  }
+  .contact-btn:hover { border-color: var(--yellow); color: var(--yellow); background: rgba(245,197,0,0.08); }
+  .contact-btn svg { width: 16px; height: 16px; flex-shrink: 0; }
+
+  /* ─── RED STRIPE (like cover author banner) ─── */
+  .red-stripe {
+    background: var(--red);
+    padding: 20px 28px;
+    text-align: center;
+  }
+  .red-stripe p {
+    font-family: 'Anton', sans-serif;
+    font-size: clamp(14px, 2.5vw, 18px);
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    color: var(--white);
+    margin-bottom: 2px;
+  }
+  .red-stripe span {
+    font-family: 'Inter', sans-serif;
+    font-size: 12px;
+    font-weight: 500;
+    color: rgba(255,255,255,0.65);
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+  }
+
+  /* ─── FOOTER ─── */
+  footer {
+    background: #0a0a0a;
+    padding: 28px 24px;
+    text-align: center;
+    border-top: 1px solid #1e1e1e;
+  }
+  .footer-brand {
+    font-family: 'Anton', sans-serif;
+    font-size: 15px;
+    letter-spacing: 0.05em;
+    color: rgba(255,255,255,0.4);
+    margin-bottom: 8px;
+    text-transform: uppercase;
+  }
+  .footer-brand .script { color: var(--yellow); font-family: 'Inter', sans-serif; font-style: italic; font-weight: 700; }
+  .footer-links {
+    font-size: 12px;
+    color: rgba(255,255,255,0.28);
+  }
+  .footer-links a { color: rgba(255,255,255,0.38); text-decoration: none; }
+  .footer-links a:hover { color: var(--yellow); }
+
+  /* ─── RESPONSIVE ─── */
+  @media (max-width: 680px) {
+    .hero-inner { flex-direction: column-reverse; gap: 36px; }
+    .hero-text { text-align: center; }
+    .hero-sub { margin: 0 auto 28px; }
+    .hero-cover img { width: 170px; }
+    .cover-placeholder { width: 170px; height: 227px; }
+    .numbers-grid { gap: 10px; }
+    .author-card { flex-direction: column; padding: 24px 20px; }
+    .proof-numbers { gap: 24px; }
+    nav { padding: 13px 16px; }
+    .nav-brand { font-size: 14px; }
+    .section-divider { max-width: none; margin: 0 24px; }
+  }
+</style>
+</head>
+<body>
+
+<!-- ─── NAV ─── -->
+<nav>
+  <a href="#" class="nav-brand">THE FOOD VENDOR <span class="script">Playbook</span></a>
+  <a href="https://cultivar4.gumroad.com/l/foodvendorplaybook" class="nav-cta" target="_blank">Get It — $20 →</a>
+</nav>
+
+<!-- ─── HERO (dark + X/O pattern) ─── -->
+<div class="hero xo-dark">
+  <div class="hero-inner">
+    <div class="hero-text">
+      <span class="hero-tag">Available Now</span>
+      <h1>
+        The Food<br>Is The
+        <span class="script-word">Easy Part.</span>
+      </h1>
+      <p class="hero-tagline">Real Experience. Real Numbers. Real Systems.</p>
+      <p class="hero-sub">A 39-page guide built from 5+ years of real experience running a food pop-up at farmers markets and events. No theory. No fluff. Just what actually works and what doesn't.</p>
+      <a href="https://cultivar4.gumroad.com/l/foodvendorplaybook" class="hero-cta" target="_blank">Get the Playbook — $20 →</a>
+      <span class="hero-price">Instant download · PDF · 39 pages + Event Day Checklist</span>
+    </div>
+    <div class="hero-cover">
+      <img src="cover.png" alt="The Food Vendor Playbook cover" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+      <div class="cover-placeholder" style="display:none;">Add cover.png to your folder</div>
+    </div>
+  </div>
+</div>
+
+<!-- ─── PROOF BANNER ─── -->
+<div class="proof-banner">
+  <p class="label-top">Real numbers from real events</p>
+  <div class="proof-numbers">
+    <div class="proof-num">
+      <span class="num">$10,882</span>
+      <span class="sub">Best weekend — broken down line by line</span>
+    </div>
+    <div class="proof-num">
+      <span class="num">$521</span>
+      <span class="sub">Worst weekend — broken down line by line</span>
+    </div>
+    <div class="proof-num">
+      <span class="num">39</span>
+      <span class="sub">Pages of no-fluff real systems</span>
+    </div>
+  </div>
+</div>
+
+<!-- ─── WHITE CONTENT SECTIONS (with subtle X/O pattern) ─── -->
+<div class="sections-wrap xo-light">
+
+  <!-- WHAT'S INSIDE -->
+  <section>
+    <p class="section-eyebrow">What's inside</p>
+    <h2 class="section-title">No theory. No fluff.</h2>
+    <p class="section-body">Just what actually works and what doesn't.</p>
+    <ul class="checklist">
+      <li>
+        <span class="check-icon"><svg viewBox="0 0 13 10" fill="none"><path d="M1 5l3.5 3.5L12 1" stroke="#141414" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
+        A Concept Development Questionnaire to validate your idea before you spend a dollar
+      </li>
+      <li>
+        <span class="check-icon"><svg viewBox="0 0 13 10" fill="none"><path d="M1 5l3.5 3.5L12 1" stroke="#141414" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
+        How this business actually makes money and why it's not just about good food
+      </li>
+      <li>
+        <span class="check-icon"><svg viewBox="0 0 13 10" fill="none"><path d="M1 5l3.5 3.5L12 1" stroke="#141414" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
+        Menu strategy: why fewer items means more revenue
+      </li>
+      <li>
+        <span class="check-icon"><svg viewBox="0 0 13 10" fill="none"><path d="M1 5l3.5 3.5L12 1" stroke="#141414" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
+        Full equipment list with recommended products and direct Amazon links
+      </li>
+      <li>
+        <span class="check-icon"><svg viewBox="0 0 13 10" fill="none"><path d="M1 5l3.5 3.5L12 1" stroke="#141414" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
+        Complete operations breakdown: your event flow from arrival to breakdown
+      </li>
+      <li>
+        <span class="check-icon"><svg viewBox="0 0 13 10" fill="none"><path d="M1 5l3.5 3.5L12 1" stroke="#141414" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
+        Real numbers: a $10,882 weekend and a $521 weekend, both broken down line by line
+      </li>
+      <li>
+        <span class="check-icon"><svg viewBox="0 0 13 10" fill="none"><path d="M1 5l3.5 3.5L12 1" stroke="#141414" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
+        Licensing and compliance: what inspectors actually check, what gets vendors shut down
+      </li>
+      <li>
+        <span class="check-icon"><svg viewBox="0 0 13 10" fill="none"><path d="M1 5l3.5 3.5L12 1" stroke="#141414" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
+        How to find events, get accepted, and pick the ones worth your time
+      </li>
+      <li>
+        <span class="check-icon"><svg viewBox="0 0 13 10" fill="none"><path d="M1 5l3.5 3.5L12 1" stroke="#141414" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
+        When things go wrong: equipment fails, lines get out of control, someone complains
+      </li>
+      <li>
+        <span class="check-icon"><svg viewBox="0 0 13 10" fill="none"><path d="M1 5l3.5 3.5L12 1" stroke="#141414" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
+        How pop-ups turn into catering clients and private events
+      </li>
+      <li>
+        <span class="check-icon"><svg viewBox="0 0 13 10" fill="none"><path d="M1 5l3.5 3.5L12 1" stroke="#141414" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
+        The mental side: what to tell yourself the morning of your first event
+      </li>
+      <li>
+        <span class="check-icon"><svg viewBox="0 0 13 10" fill="none"><path d="M1 5l3.5 3.5L12 1" stroke="#141414" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
+        <strong>Bonus:</strong> Downloadable customizable Event Day Checklist (works in any browser, printable)
+      </li>
+    </ul>
+  </section>
+
+  <hr class="section-divider">
+
+  <!-- WHO IT'S FOR -->
+  <section>
+    <p class="section-eyebrow">Who this is for</p>
+    <h2 class="section-title">This guide is for you if</h2>
+    <ul class="for-you-list">
+      <li><span class="arrow">→</span> You want to start a food pop-up but don't know where to begin</li>
+      <li><span class="arrow">→</span> You've done a few events but feel like you're figuring it out alone</li>
+      <li><span class="arrow">→</span> You want to understand the business side: costs, margins, compliance, operations</li>
+      <li><span class="arrow">→</span> You're tired of generic advice from people who've never actually done it</li>
+    </ul>
+  </section>
+
+  <hr class="section-divider">
+
+  <!-- REAL NUMBERS -->
+  <section>
+    <p class="section-eyebrow">Real numbers</p>
+    <h2 class="section-title">Both sides of the business</h2>
+    <p class="section-body">Most guides only show you the wins. This one shows you both — a $10,882 weekend and a $521 weekend, broken down line by line. Because knowing what made the difference is the whole point.</p>
+    <div class="numbers-grid">
+      <div class="number-card win">
+        <span class="big-num">$10,882</span>
+        <span class="num-label">Best weekend revenue<br>fully broken down</span>
+      </div>
+      <div class="number-card">
+        <span class="big-num">$521</span>
+        <span class="num-label">Worst weekend<br>broken down so you can avoid it</span>
+      </div>
+    </div>
+  </section>
+
+  <hr class="section-divider">
+
+  <!-- AUTHOR -->
+  <section>
+    <p class="section-eyebrow">About the author</p>
+    <h2 class="section-title">Built from real experience</h2>
+    <div class="author-card">
+      <div class="author-avatar">
+        <img src="yorman.jpg" alt="Yorman Sanchez" onerror="this.style.display='none'; this.parentElement.innerHTML='Y';">
+      </div>
+      <div>
+        <p class="author-name">Yorman Sanchez</p>
+        <p class="author-role">Chef &amp; Owner · Cultivar Hospitality LLC · ChKn M.I.A.</p>
+        <div class="author-bio">
+          <p>Yorman Sanchez is a chef, entrepreneur, and owner of Cultivar Hospitality LLC. He's been in the hospitality business for over a decade, working in professional kitchens and hotels across the country before building his own food pop-up brand from the ground up. He's done hundreds of events and turned farmers market exposure into a full catering operation.</p>
+          <p>This is the guide he wished someone had handed him before his first event.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <hr class="section-divider">
+
+  <!-- WHAT YOU GET -->
+  <section>
+    <p class="section-eyebrow">What you get</p>
+    <h2 class="section-title">Instant download</h2>
+    <div class="get-grid">
+      <div class="get-pill"><span class="icon">📘</span> Food Vendor Playbook PDF (39 pages)</div>
+      <div class="get-pill"><span class="icon">✅</span> Event Day Checklist — interactive &amp; printable</div>
+      <div class="get-pill"><span class="icon">⚡</span> Instant download after purchase</div>
+    </div>
+  </section>
+
+</div><!-- end .sections-wrap -->
+
+<!-- ─── CTA SECTION (dark + X/O pattern) ─── -->
+<div class="cta-section xo-dark">
+  <div class="cta-inner">
+    <p class="section-eyebrow">Get the playbook</p>
+    <h2 class="section-title">From your first event to a profitable pop-up business.</h2>
+    <p class="price-line">One bad event can cost you $500+ in wasted product, fees, and time. This guide is $20.</p>
+    <p class="price-sub">39 pages · Instant PDF download · Event Day Checklist included · Instant download after purchase</p>
+    <a href="https://cultivar4.gumroad.com/l/foodvendorplaybook" class="big-cta" target="_blank">Get the Playbook — $20 →</a>
+    <p style="font-size:13px; color:rgba(255,255,255,0.35); margin-top:28px; margin-bottom:10px; text-transform:uppercase; letter-spacing:0.1em; font-weight:600;">Have a question?</p>
+    <div class="cta-contact">
+      <a href="https://instagram.com/Yorman06" target="_blank" class="contact-btn">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg>
+        DM @Yorman06
+      </a>
+      <a href="mailto:cultivarhospitality@gmail.com" class="contact-btn">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+        cultivarhospitality@gmail.com
+      </a>
+    </div>
+  </div>
+</div>
+
+<!-- ─── RED STRIPE (mirrors cover author banner) ─── -->
+<div class="red-stripe">
+  <p>By Yorman Sanchez</p>
+  <span>Chef &amp; Owner, Cultivar Hospitality LLC | ChKn M.I.A.</span>
+</div>
+
+<!-- ─── FOOTER ─── -->
+<footer>
+  <p class="footer-brand">THE FOOD VENDOR <span class="script">Playbook</span></p>
+  <p class="footer-links">
+    Cultivar Hospitality LLC &nbsp;·&nbsp;
+    <a href="https://cultivar4.gumroad.com/l/foodvendorplaybook" target="_blank">cultivar4.gumroad.com</a> &nbsp;·&nbsp;
+    <a href="mailto:cultivarhospitality@gmail.com">cultivarhospitality@gmail.com</a>
+  </p>
+</footer>
+
+</body>
+</html>
