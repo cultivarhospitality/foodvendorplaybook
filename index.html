@@ -6,7 +6,7 @@
 <title>The Food Vendor Playbook: From Your First Event to a Profitable Pop-Up Business</title>
 <meta name="description" content="The business side nobody teaches you. 39 pages. Real numbers. No fluff. Built from years running food pop-ups.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
-<link href="https://fonts.googleapis.com/css2?family=Anton&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;500;600;700&family=Lato:ital,wght@0,400;0,700;0,900;1,700;1,900&display=swap" rel="stylesheet">
 
 <!-- Meta Pixel Code -->
 <script>
@@ -22,97 +22,125 @@ fbq('init', '153290439875979');
 fbq('track', 'PageView');
 </script>
 <noscript><img height="1" width="1" style="display:none"
-src="https://www.facebook.com/tr?id=153290439875979&ev=PageView&noscript=1"
-/></noscript>
+src="https://www.facebook.com/tr?id=153290439875979&ev=PageView&noscript=1"/></noscript>
 <!-- End Meta Pixel Code -->
 
 <style>
   *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
   :root { --black: #141414; --yellow: #F5C500; --red: #E63946; --white: #FFFFFF; --off: #F7F7F7; --border: #E0E0E0; --text: #1A1A1A; --mid: #555555; --light: #888888; }
-  body { background: var(--white); color: var(--text); font-family: 'Inter', sans-serif; font-size: 16px; line-height: 1.6; -webkit-font-smoothing: antialiased; }
-  .xo-dark {
+  body { background: var(--white); color: var(--text); font-family: 'Lato', sans-serif; font-size: 16px; line-height: 1.6; -webkit-font-smoothing: antialiased; }
+
+  /* Hero background with image + gradient */
+  .hero-bg {
     background-color: var(--black);
-    background-image: linear-gradient(to right, rgba(20,20,20,0.92) 45%, rgba(20,20,20,0.55) 100%), url('hero-bg.jpg');
+    background-image: linear-gradient(to right, rgba(20,20,20,0.93) 40%, rgba(20,20,20,0.55) 100%), url('hero-bg.jpg');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
   }
-  .xo-light { background-color: var(--white); background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='240' height='240'%3E%3Ccircle cx='38' cy='38' r='14' fill='none' stroke='rgba(20,20,20,0.04)' stroke-width='2.5'/%3E%3Ccircle cx='145' cy='95' r='14' fill='none' stroke='rgba(20,20,20,0.03)' stroke-width='2.5'/%3E%3Ccircle cx='85' cy='175' r='14' fill='none' stroke='rgba(20,20,20,0.04)' stroke-width='2.5'/%3E%3Ccircle cx='200' cy='50' r='10' fill='none' stroke='rgba(20,20,20,0.03)' stroke-width='2'/%3E%3Ccircle cx='210' cy='170' r='12' fill='none' stroke='rgba(20,20,20,0.03)' stroke-width='2'/%3E%3Cline x1='163' y1='22' x2='183' y2='42' stroke='rgba(20,20,20,0.04)' stroke-width='2.5' stroke-linecap='round'/%3E%3Cline x1='183' y1='22' x2='163' y2='42' stroke='rgba(20,20,20,0.04)' stroke-width='2.5' stroke-linecap='round'/%3E%3Cline x1='15' y1='108' x2='35' y2='128' stroke='rgba(20,20,20,0.04)' stroke-width='2.5' stroke-linecap='round'/%3E%3Cline x1='35' y1='108' x2='15' y2='128' stroke='rgba(20,20,20,0.04)' stroke-width='2.5' stroke-linecap='round'/%3E%3Cline x1='108' y1='118' x2='128' y2='138' stroke='rgba(20,20,20,0.04)' stroke-width='2.5' stroke-linecap='round'/%3E%3Cline x1='128' y1='118' x2='108' y2='138' stroke='rgba(20,20,20,0.04)' stroke-width='2.5' stroke-linecap='round'/%3E%3Cline x1='52' y1='38' x2='131' y2='90' stroke='rgba(20,20,20,0.02)' stroke-width='1.5' stroke-dasharray='6,5'/%3E%3Cline x1='99' y1='161' x2='145' y2='109' stroke='rgba(20,20,20,0.02)' stroke-width='1.5' stroke-dasharray='6,5'/%3E%3C/svg%3E"); background-repeat: repeat; }
-  .cta-dark { background-color: var(--black); }
+  /* Dark sections without image */
+  .dark-section { background-color: var(--black); }
+  /* Light X/O pattern sections */
+  .xo-light { background-color: var(--white); background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='240' height='240'%3E%3Ccircle cx='38' cy='38' r='14' fill='none' stroke='rgba(20,20,20,0.04)' stroke-width='2.5'/%3E%3Ccircle cx='145' cy='95' r='14' fill='none' stroke='rgba(20,20,20,0.03)' stroke-width='2.5'/%3E%3Ccircle cx='85' cy='175' r='14' fill='none' stroke='rgba(20,20,20,0.04)' stroke-width='2.5'/%3E%3Ccircle cx='200' cy='50' r='10' fill='none' stroke='rgba(20,20,20,0.03)' stroke-width='2'/%3E%3Ccircle cx='210' cy='170' r='12' fill='none' stroke='rgba(20,20,20,0.03)' stroke-width='2'/%3E%3Cline x1='163' y1='22' x2='183' y2='42' stroke='rgba(20,20,20,0.04)' stroke-width='2.5' stroke-linecap='round'/%3E%3Cline x1='183' y1='22' x2='163' y2='42' stroke='rgba(20,20,20,0.04)' stroke-width='2.5' stroke-linecap='round'/%3E%3Cline x1='15' y1='108' x2='35' y2='128' stroke='rgba(20,20,20,0.04)' stroke-width='2.5' stroke-linecap='round'/%3E%3Cline x1='35' y1='108' x2='15' y2='128' stroke='rgba(20,20,20,0.04)' stroke-width='2.5' stroke-linecap='round'/%3E%3Cline x1='108' y1='118' x2='128' y2='138' stroke='rgba(20,20,20,0.04)' stroke-width='2.5' stroke-linecap='round'/%3E%3Cline x1='128' y1='118' x2='108' y2='138' stroke='rgba(20,20,20,0.04)' stroke-width='2.5' stroke-linecap='round'/%3E%3C/svg%3E"); background-repeat: repeat; }
+
+  /* NAV */
   nav { background: var(--black); padding: 15px 28px; display: flex; align-items: center; justify-content: space-between; position: sticky; top: 0; z-index: 100; border-bottom: 3px solid var(--yellow); }
-  .nav-brand { font-family: 'Anton', sans-serif; font-size: 17px; letter-spacing: 0.04em; color: var(--white); text-decoration: none; text-transform: uppercase; }
-  .nav-brand .script { color: var(--yellow); font-family: 'Inter', sans-serif; font-style: italic; font-weight: 700; font-size: 1.1em; }
-  .nav-cta { background: var(--red); color: var(--white); font-size: 13px; font-weight: 700; padding: 9px 22px; border-radius: 4px; text-decoration: none; letter-spacing: 0.04em; text-transform: uppercase; transition: opacity 0.15s; }
+  .nav-brand { font-family: 'Oswald', sans-serif; font-size: 18px; font-weight: 600; letter-spacing: 0.08em; color: var(--white); text-decoration: none; text-transform: uppercase; }
+  .nav-brand .script { color: var(--yellow); font-family: 'Lato', sans-serif; font-style: italic; font-weight: 900; font-size: 1.05em; text-transform: none; letter-spacing: 0; }
+  .nav-cta { background: var(--red); color: var(--white); font-size: 13px; font-weight: 700; font-family: 'Lato', sans-serif; padding: 9px 22px; border-radius: 4px; text-decoration: none; letter-spacing: 0.06em; text-transform: uppercase; transition: opacity 0.15s; }
   .nav-cta:hover { opacity: 0.85; }
-  .hero { padding: 72px 24px 64px; position: relative; overflow: hidden; }
+
+  /* HERO */
+  .hero { padding: 80px 24px 72px; position: relative; overflow: hidden; }
   .hero-inner { max-width: 1080px; margin: 0 auto; display: flex; align-items: center; gap: 64px; flex-wrap: wrap; justify-content: center; }
   .hero-text { flex: 1; min-width: 290px; }
-  .hero-tag { display: inline-block; background: var(--yellow); color: var(--black); font-size: 10px; font-weight: 700; letter-spacing: 0.14em; text-transform: uppercase; padding: 5px 14px; border-radius: 3px; margin-bottom: 20px; }
-  .hero h1 { font-family: 'Anton', sans-serif; font-size: clamp(36px, 6vw, 68px); line-height: 1.0; letter-spacing: 0.01em; text-transform: uppercase; color: var(--white); margin-bottom: 12px; }
-  .hero-subhook { font-family: 'Inter', sans-serif; font-size: clamp(18px, 2.5vw, 24px); font-weight: 700; font-style: italic; color: var(--yellow); margin-bottom: 16px; }
-  .hero-tagline { font-size: 11px; font-weight: 700; letter-spacing: 0.16em; text-transform: uppercase; color: rgba(255,255,255,0.45); margin-bottom: 20px; }
-  .hero-sub { font-size: clamp(15px, 2vw, 17px); color: rgba(255,255,255,0.62); max-width: 480px; line-height: 1.65; margin-bottom: 32px; }
-  .cta-wrap { display: flex; flex-direction: column; align-items: flex-start; gap: 8px; margin-bottom: 8px; }
-  .hero-cta { display: inline-block; background: var(--red); color: var(--white); font-size: 16px; font-weight: 700; padding: 17px 44px; border-radius: 4px; text-decoration: none; letter-spacing: 0.04em; text-transform: uppercase; transition: opacity 0.15s; }
+  .hero-tag { display: inline-block; background: var(--yellow); color: var(--black); font-family: 'Lato', sans-serif; font-size: 10px; font-weight: 700; letter-spacing: 0.16em; text-transform: uppercase; padding: 5px 14px; border-radius: 3px; margin-bottom: 20px; }
+  .hero h1 { font-family: 'Oswald', sans-serif; font-size: clamp(38px, 6vw, 72px); font-weight: 700; line-height: 1.0; letter-spacing: 0.02em; text-transform: uppercase; color: var(--white); margin-bottom: 14px; }
+  .hero-subhook { font-family: 'Lato', sans-serif; font-size: clamp(18px, 2.5vw, 24px); font-weight: 900; font-style: italic; color: var(--yellow); margin-bottom: 16px; }
+  .hero-tagline { font-size: 11px; font-weight: 700; letter-spacing: 0.18em; text-transform: uppercase; color: rgba(255,255,255,0.45); margin-bottom: 20px; }
+  .hero-sub { font-size: clamp(15px, 2vw, 17px); color: rgba(255,255,255,0.65); max-width: 480px; line-height: 1.7; margin-bottom: 32px; }
+  .cta-wrap { display: flex; flex-direction: column; align-items: flex-start; gap: 10px; margin-bottom: 12px; }
+  .hero-cta { display: inline-block; background: var(--red); color: var(--white); font-family: 'Oswald', sans-serif; font-size: 18px; font-weight: 600; padding: 16px 44px; border-radius: 4px; text-decoration: none; letter-spacing: 0.1em; text-transform: uppercase; transition: opacity 0.15s; }
   .hero-cta:hover { opacity: 0.87; }
-  .cta-reassurance { font-size: 12px; color: rgba(255,255,255,0.9); letter-spacing: 0.04em; background: rgba(255,255,255,0.1); border: 1px solid rgba(255,255,255,0.2); padding: 5px 14px; border-radius: 20px; display: inline-block; }
-  .hero-price { display: block; margin-top: 8px; font-size: 13px; color: rgba(255,255,255,0.7); font-weight: 500; }
-  .hero-price s { color: rgba(255,255,255,0.4); text-decoration: line-through; }
+  .cta-reassurance { font-size: 12px; font-weight: 700; color: rgba(255,255,255,0.9); letter-spacing: 0.06em; background: rgba(255,255,255,0.1); border: 1px solid rgba(255,255,255,0.2); padding: 5px 16px; border-radius: 20px; display: inline-block; text-transform: uppercase; }
+  .hero-price { display: block; margin-top: 4px; font-size: 13px; font-weight: 700; color: rgba(255,255,255,0.7); }
+  .hero-price s { color: rgba(255,255,255,0.4); font-weight: 400; }
   .hero-cover { flex-shrink: 0; }
   .hero-cover img { width: 420px; border-radius: 8px; transform: rotate(2.5deg); box-shadow: 0 30px 70px rgba(0,0,0,0.75), 0 0 0 1px rgba(245,197,0,0.15); display: block; }
-  .cover-placeholder { width: 420px; height: 560px; background: #222; border: 2px dashed #444; border-radius: 8px; transform: rotate(2.5deg); display: flex; align-items: center; justify-content: center; font-size: 12px; color: #555; text-align: center; padding: 16px; }
+  .cover-placeholder { width: 420px; height: 560px; background: #222; border: 2px dashed #444; border-radius: 8px; transform: rotate(2.5deg); display: flex; align-items: center; justify-content: center; font-size: 13px; color: #555; text-align: center; padding: 16px; font-family: 'Oswald', sans-serif; letter-spacing: 0.1em; }
+
+  /* PROOF BANNER */
   .proof-banner { background: var(--yellow); padding: 40px 24px; text-align: center; }
-  .proof-banner .label-top { font-size: 10px; font-weight: 700; letter-spacing: 0.14em; text-transform: uppercase; color: rgba(20,20,20,0.5); margin-bottom: 20px; }
+  .proof-banner .label-top { font-size: 10px; font-weight: 700; letter-spacing: 0.16em; text-transform: uppercase; color: rgba(20,20,20,0.5); margin-bottom: 20px; }
   .proof-numbers { display: flex; justify-content: center; gap: 52px; flex-wrap: wrap; }
   .proof-num { text-align: center; }
-  .proof-num .num { font-family: 'Anton', sans-serif; font-size: 46px; color: var(--black); display: block; line-height: 1; }
-  .proof-num .sub { font-size: 11px; color: rgba(20,20,20,0.55); margin-top: 5px; display: block; font-weight: 600; text-transform: uppercase; letter-spacing: 0.06em; max-width: 160px; }
+  .proof-num .num { font-family: 'Oswald', sans-serif; font-size: 50px; font-weight: 700; color: var(--black); display: block; line-height: 1; }
+  .proof-num .sub { font-size: 11px; font-weight: 700; color: rgba(20,20,20,0.55); margin-top: 6px; display: block; text-transform: uppercase; letter-spacing: 0.08em; max-width: 160px; }
+
+  /* SECTIONS */
   .sections-wrap { background: var(--white); }
   section { max-width: 780px; margin: 0 auto; padding: 64px 24px; position: relative; z-index: 1; }
   .section-divider { max-width: 780px; margin: 0 auto; border: none; border-top: 1px solid var(--border); }
-  .section-eyebrow { font-size: 10px; font-weight: 700; letter-spacing: 0.14em; text-transform: uppercase; color: var(--red); margin-bottom: 10px; }
-  .section-title { font-family: 'Anton', sans-serif; font-size: clamp(28px, 5vw, 44px); text-transform: uppercase; line-height: 1.0; color: var(--black); margin-bottom: 16px; }
+  .section-eyebrow { font-size: 10px; font-weight: 700; letter-spacing: 0.16em; text-transform: uppercase; color: var(--red); margin-bottom: 10px; }
+  .section-title { font-family: 'Oswald', sans-serif; font-size: clamp(28px, 5vw, 44px); font-weight: 700; text-transform: uppercase; letter-spacing: 0.04em; line-height: 1.0; color: var(--black); margin-bottom: 16px; }
   .section-body { font-size: 17px; color: var(--mid); line-height: 1.75; }
+
+  /* CHECKLIST */
   .checklist { list-style: none; padding: 0; margin: 28px 0 0; }
   .checklist li { display: flex; gap: 14px; align-items: flex-start; padding: 14px 0; border-bottom: 1px solid var(--border); font-size: 15px; color: var(--text); line-height: 1.5; }
   .checklist li:last-child { border-bottom: none; }
   .check-icon { width: 22px; height: 22px; background: var(--yellow); border-radius: 3px; display: flex; align-items: center; justify-content: center; flex-shrink: 0; margin-top: 1px; }
   .check-icon svg { width: 13px; height: 13px; }
+
+  /* FOR YOU */
   .for-you-list { list-style: none; padding: 0; margin: 24px 0 0; }
   .for-you-list li { display: flex; gap: 14px; align-items: flex-start; padding: 15px 0; border-bottom: 1px solid var(--border); font-size: 16px; color: var(--text); line-height: 1.5; }
   .for-you-list li:last-child { border-bottom: none; }
   .arrow { color: var(--red); font-size: 18px; line-height: 1.5; flex-shrink: 0; font-weight: 700; }
+
+  /* AUTHOR */
   .author-card { background: var(--black); border-radius: 12px; padding: 36px 32px; display: flex; gap: 28px; align-items: flex-start; margin-top: 8px; }
-  .author-avatar { width: 100px; height: 100px; border-radius: 50%; background: var(--yellow); display: flex; align-items: center; justify-content: center; font-family: 'Anton', sans-serif; font-size: 28px; color: var(--black); flex-shrink: 0; border: 3px solid var(--yellow); overflow: hidden; }
+  .author-avatar { width: 100px; height: 100px; border-radius: 50%; background: var(--yellow); display: flex; align-items: center; justify-content: center; font-family: 'Oswald', sans-serif; font-size: 28px; color: var(--black); flex-shrink: 0; border: 3px solid var(--yellow); overflow: hidden; }
   .author-avatar img { width: 100%; height: 100%; object-fit: cover; object-position: center top; border-radius: 50%; }
-  .author-name { font-family: 'Anton', sans-serif; font-size: 22px; letter-spacing: 0.03em; color: var(--white); margin-bottom: 3px; }
-  .author-role { font-size: 11px; color: var(--yellow); font-weight: 700; letter-spacing: 0.1em; text-transform: uppercase; margin-bottom: 14px; }
+  .author-name { font-family: 'Oswald', sans-serif; font-size: 24px; font-weight: 600; letter-spacing: 0.04em; color: var(--white); margin-bottom: 4px; }
+  .author-role { font-size: 11px; font-weight: 700; color: var(--yellow); letter-spacing: 0.12em; text-transform: uppercase; margin-bottom: 14px; }
   .author-bio { font-size: 15px; color: rgba(255,255,255,0.65); line-height: 1.7; }
   .author-bio p + p { margin-top: 12px; }
+
+  /* WHAT YOU GET */
   .get-grid { display: flex; gap: 12px; flex-wrap: wrap; margin-top: 28px; }
-  .get-pill { background: var(--white); border: 2px solid var(--black); border-radius: 40px; padding: 10px 22px; font-size: 14px; font-weight: 600; color: var(--black); display: flex; align-items: center; gap: 8px; }
+  .get-pill { background: var(--white); border: 2px solid var(--black); border-radius: 40px; padding: 10px 22px; font-size: 14px; font-weight: 700; color: var(--black); display: flex; align-items: center; gap: 8px; letter-spacing: 0.02em; }
+
+  /* CTA SECTION */
   .cta-section { padding: 88px 24px; text-align: center; position: relative; overflow: hidden; }
   .cta-inner { max-width: 560px; margin: 0 auto; position: relative; z-index: 1; }
   .cta-section .section-eyebrow { color: var(--yellow); }
   .cta-section .section-title { color: var(--white); margin-bottom: 12px; }
-  .price-line { font-size: 16px; color: rgba(255,255,255,0.6); margin-bottom: 8px; line-height: 1.6; }
-  .price-sub { font-size: 12px; color: rgba(255,255,255,0.35); margin-bottom: 28px; font-style: italic; }
-  .big-cta { display: inline-block; background: var(--red); color: var(--white); font-size: 17px; font-weight: 700; padding: 20px 56px; border-radius: 4px; text-decoration: none; letter-spacing: 0.04em; text-transform: uppercase; transition: opacity 0.15s; }
+  .price-line { font-size: 16px; color: rgba(255,255,255,0.65); margin-bottom: 8px; line-height: 1.7; }
+  .price-sub { font-size: 13px; font-weight: 700; color: rgba(255,255,255,0.5); margin-bottom: 32px; letter-spacing: 0.04em; }
+  .price-sub s { font-weight: 400; color: rgba(255,255,255,0.3); }
+  .big-cta-wrap { display: flex; flex-direction: column; align-items: center; gap: 10px; margin-bottom: 8px; }
+  .big-cta { display: inline-block; background: var(--red); color: var(--white); font-family: 'Oswald', sans-serif; font-size: 20px; font-weight: 600; padding: 18px 56px; border-radius: 4px; text-decoration: none; letter-spacing: 0.1em; text-transform: uppercase; transition: opacity 0.15s; }
   .big-cta:hover { opacity: 0.87; }
-  .big-cta-wrap { display: flex; flex-direction: column; align-items: center; gap: 8px; margin-bottom: 8px; }
   .cta-contact { display: flex; justify-content: center; gap: 16px; flex-wrap: wrap; margin-top: 28px; }
-  .contact-btn { display: inline-flex; align-items: center; gap: 9px; padding: 12px 22px; border-radius: 40px; font-size: 14px; font-weight: 600; text-decoration: none; border: 2px solid rgba(255,255,255,0.2); color: var(--white); background: rgba(255,255,255,0.07); transition: opacity 0.15s; }
+  .contact-btn { display: inline-flex; align-items: center; gap: 9px; padding: 12px 22px; border-radius: 40px; font-size: 14px; font-weight: 700; text-decoration: none; border: 2px solid rgba(255,255,255,0.2); color: var(--white); background: rgba(255,255,255,0.07); transition: all 0.15s; letter-spacing: 0.04em; }
   .contact-btn:hover { border-color: var(--yellow); color: var(--yellow); }
   .contact-btn svg { width: 16px; height: 16px; flex-shrink: 0; }
+
+  /* RED STRIPE */
   .red-stripe { background: var(--red); padding: 20px 28px; text-align: center; }
-  .red-stripe p { font-family: 'Anton', sans-serif; font-size: clamp(14px, 2.5vw, 18px); letter-spacing: 0.06em; text-transform: uppercase; color: var(--white); margin-bottom: 2px; }
-  .red-stripe span { font-family: 'Inter', sans-serif; font-size: 12px; font-weight: 500; color: rgba(255,255,255,0.65); letter-spacing: 0.04em; text-transform: uppercase; }
+  .red-stripe p { font-family: 'Oswald', sans-serif; font-size: clamp(14px, 2.5vw, 18px); font-weight: 600; letter-spacing: 0.1em; text-transform: uppercase; color: var(--white); margin-bottom: 2px; }
+  .red-stripe span { font-family: 'Lato', sans-serif; font-size: 12px; font-weight: 400; color: rgba(255,255,255,0.65); letter-spacing: 0.06em; text-transform: uppercase; }
+
+  /* FOOTER */
   footer { background: #0a0a0a; padding: 28px 24px; text-align: center; border-top: 1px solid #1e1e1e; }
-  .footer-brand { font-family: 'Anton', sans-serif; font-size: 15px; letter-spacing: 0.05em; color: rgba(255,255,255,0.4); margin-bottom: 8px; text-transform: uppercase; }
-  .footer-brand .script { color: var(--yellow); font-family: 'Inter', sans-serif; font-style: italic; font-weight: 700; }
+  .footer-brand { font-family: 'Oswald', sans-serif; font-size: 15px; font-weight: 500; letter-spacing: 0.1em; color: rgba(255,255,255,0.4); margin-bottom: 8px; text-transform: uppercase; }
+  .footer-brand .script { color: var(--yellow); font-family: 'Lato', sans-serif; font-style: italic; font-weight: 900; letter-spacing: 0; text-transform: none; }
   .footer-links { font-size: 12px; color: rgba(255,255,255,0.28); }
   .footer-links a { color: rgba(255,255,255,0.38); text-decoration: none; }
   .footer-links a:hover { color: var(--yellow); }
+
+  /* RESPONSIVE */
   @media (max-width: 680px) {
     .hero-inner { flex-direction: column-reverse; gap: 36px; }
     .hero-text { text-align: center; }
@@ -123,7 +151,7 @@ src="https://www.facebook.com/tr?id=153290439875979&ev=PageView&noscript=1"
     .author-card { flex-direction: column; padding: 24px 20px; }
     .proof-numbers { gap: 24px; }
     nav { padding: 13px 16px; }
-    .nav-brand { font-size: 14px; }
+    .nav-brand { font-size: 15px; }
   }
 </style>
 </head>
@@ -131,22 +159,22 @@ src="https://www.facebook.com/tr?id=153290439875979&ev=PageView&noscript=1"
 
 <nav>
   <a href="#" class="nav-brand">THE FOOD VENDOR <span class="script">Playbook</span></a>
-  <a href="https://cultivar4.gumroad.com/l/foodvendorplaybook?wanted=true&utm_source=website&utm_medium=landing_page&utm_campaign=fvp" class="nav-cta" target="_blank">Get It for $20 &rarr;</a>
+  <a href="https://cultivar4.gumroad.com/l/foodvendorplaybook?wanted=true&utm_source=website&utm_medium=landing_page&utm_campaign=fvp" class="nav-cta" target="_blank">Get It for $20</a>
 </nav>
 
-<div class="hero xo-dark">
+<div class="hero hero-bg">
   <div class="hero-inner">
     <div class="hero-text">
       <span class="hero-tag">Available Now</span>
       <h1>From your first pop-up to a profitable food business.</h1>
       <p class="hero-subhook">The food is the easy part.</p>
       <p class="hero-tagline">Real Experience. Real Numbers. Real Systems.</p>
-      <p class="hero-sub">A 39-page guide built from 5+ years of real experience running a food pop-up at farmers markets and events. No theory. No fluff. Just what actually works and what doesn&apos;t.</p>
+      <p class="hero-sub">A 39-page guide built from 5+ years of real experience running a food pop-up at farmers markets and events. No theory. No fluff. Just what actually works and what doesn't.</p>
       <div class="cta-wrap">
-        <a href="https://cultivar4.gumroad.com/l/foodvendorplaybook?wanted=true&utm_source=website&utm_medium=landing_page&utm_campaign=fvp" class="hero-cta" target="_blank">Get the Playbook for $20 &rarr;</a>
+        <a href="https://cultivar4.gumroad.com/l/foodvendorplaybook?wanted=true&utm_source=website&utm_medium=landing_page&utm_campaign=fvp" class="hero-cta" target="_blank">Get the Playbook for $20</a>
         <span class="cta-reassurance">No subscription. One-time purchase. Instant PDF.</span>
       </div>
-      <span class="hero-price"><s>$29</s> &nbsp;$20 | Instant download &middot; PDF &middot; 39 pages + Event Day Checklist</span>
+      <span class="hero-price"><s>$29</s> &nbsp;$20 &nbsp;|&nbsp; Instant download &middot; PDF &middot; 39 pages + Event Day Checklist</span>
     </div>
     <div class="hero-cover">
       <img src="cover.png" alt="The Food Vendor Playbook cover" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
@@ -166,12 +194,12 @@ src="https://www.facebook.com/tr?id=153290439875979&ev=PageView&noscript=1"
 
 <div class="sections-wrap xo-light">
   <section>
-    <p class="section-eyebrow">What&apos;s inside</p>
+    <p class="section-eyebrow">What's inside</p>
     <h2 class="section-title">No theory. No fluff.</h2>
-    <p class="section-body">Just what actually works and what doesn&apos;t.</p>
+    <p class="section-body">Just what actually works and what doesn't.</p>
     <ul class="checklist">
       <li><span class="check-icon"><svg viewBox="0 0 13 10" fill="none"><path d="M1 5l3.5 3.5L12 1" stroke="#141414" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></span>A Concept Development Questionnaire to validate your idea before you spend a dollar</li>
-      <li><span class="check-icon"><svg viewBox="0 0 13 10" fill="none"><path d="M1 5l3.5 3.5L12 1" stroke="#141414" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></span>How this business actually makes money and why it&apos;s not just about good food</li>
+      <li><span class="check-icon"><svg viewBox="0 0 13 10" fill="none"><path d="M1 5l3.5 3.5L12 1" stroke="#141414" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></span>How this business actually makes money and why it's not just about good food</li>
       <li><span class="check-icon"><svg viewBox="0 0 13 10" fill="none"><path d="M1 5l3.5 3.5L12 1" stroke="#141414" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></span>Menu strategy: why fewer items means more revenue</li>
       <li><span class="check-icon"><svg viewBox="0 0 13 10" fill="none"><path d="M1 5l3.5 3.5L12 1" stroke="#141414" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></span>Full equipment list with recommended products and direct Amazon links</li>
       <li><span class="check-icon"><svg viewBox="0 0 13 10" fill="none"><path d="M1 5l3.5 3.5L12 1" stroke="#141414" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></span>Complete operations breakdown: your event flow from arrival to breakdown</li>
@@ -189,10 +217,10 @@ src="https://www.facebook.com/tr?id=153290439875979&ev=PageView&noscript=1"
     <p class="section-eyebrow">Who this is for</p>
     <h2 class="section-title">This guide is for you if</h2>
     <ul class="for-you-list">
-      <li><span class="arrow">&rarr;</span> You want to start a food pop-up but don&apos;t know where to begin</li>
-      <li><span class="arrow">&rarr;</span> You&apos;ve done a few events but feel like you&apos;re figuring it out alone</li>
-      <li><span class="arrow">&rarr;</span> You want to understand the business side: costs, margins, compliance, operations</li>
-      <li><span class="arrow">&rarr;</span> You&apos;re tired of generic advice from people who&apos;ve never actually done it</li>
+      <li><span class="arrow">&#8594;</span> You want to start a food pop-up but don't know where to begin</li>
+      <li><span class="arrow">&#8594;</span> You've done a few events but feel like you're figuring it out alone</li>
+      <li><span class="arrow">&#8594;</span> You want to understand the business side: costs, margins, compliance, operations</li>
+      <li><span class="arrow">&#8594;</span> You're tired of generic advice from people who've never actually done it</li>
     </ul>
   </section>
   <section>
@@ -206,7 +234,7 @@ src="https://www.facebook.com/tr?id=153290439875979&ev=PageView&noscript=1"
         <p class="author-name">Yorman Sanchez</p>
         <p class="author-role">Chef &amp; Owner &middot; Cultivar Hospitality LLC &middot; ChKn M.I.A.</p>
         <div class="author-bio">
-          <p>Yorman Sanchez is a chef, entrepreneur, and owner of Cultivar Hospitality LLC. He&apos;s been in the hospitality business for over a decade, working in professional kitchens and hotels across the country before building his own food pop-up brand from the ground up.</p>
+          <p>Yorman Sanchez is a chef, entrepreneur, and owner of Cultivar Hospitality LLC. He's been in the hospitality business for over a decade, working in professional kitchens and hotels across the country before building his own food pop-up brand from the ground up.</p>
           <p>This is the guide he wished someone had handed him before his first event.</p>
         </div>
       </div>
@@ -217,24 +245,24 @@ src="https://www.facebook.com/tr?id=153290439875979&ev=PageView&noscript=1"
     <p class="section-eyebrow">What you get</p>
     <h2 class="section-title">Instant download</h2>
     <div class="get-grid">
-      <div class="get-pill"><span>&#128216;</span> Food Vendor Playbook PDF (39 pages)</div>
-      <div class="get-pill"><span>&#10003;</span> Event Day Checklist, interactive &amp; printable</div>
-      <div class="get-pill"><span>&#9889;</span> Instant download after purchase</div>
+      <div class="get-pill">&#128216; Food Vendor Playbook PDF (39 pages)</div>
+      <div class="get-pill">&#10003; Event Day Checklist, interactive &amp; printable</div>
+      <div class="get-pill">&#9889; Instant download after purchase</div>
     </div>
   </section>
 </div>
 
-<div class="cta-section cta-dark">
+<div class="cta-section dark-section">
   <div class="cta-inner">
     <p class="section-eyebrow">Get the playbook</p>
     <h2 class="section-title">From your first event to a profitable pop-up business.</h2>
-    <p class="price-line">One bad event costs $500+ in wasted product, booth fees, and time. This guide is $20. It won&apos;t prevent every mistake, but it&apos;ll prevent the expensive ones.</p>
-    <p class="price-sub"><s>$29</s> &nbsp;$20 &middot; 39 pages &middot; Instant PDF download &middot; Event Day Checklist included</p>
+    <p class="price-line">One bad event costs $500+ in wasted product, booth fees, and time. This guide is $20. It won't prevent every mistake, but it'll prevent the expensive ones.</p>
+    <p class="price-sub"><s>$29</s> &nbsp;$20 &middot; 39 pages &middot; Instant PDF &middot; Event Day Checklist included</p>
     <div class="big-cta-wrap">
-      <a href="https://cultivar4.gumroad.com/l/foodvendorplaybook?wanted=true&utm_source=website&utm_medium=landing_page&utm_campaign=fvp" class="big-cta" target="_blank">Get the Playbook for $20 &rarr;</a>
+      <a href="https://cultivar4.gumroad.com/l/foodvendorplaybook?wanted=true&utm_source=website&utm_medium=landing_page&utm_campaign=fvp" class="big-cta" target="_blank">Get the Playbook for $20</a>
       <span class="cta-reassurance">No subscription. One-time purchase. Instant PDF.</span>
     </div>
-    <p style="font-size:13px;color:rgba(255,255,255,0.35);margin-top:28px;margin-bottom:10px;text-transform:uppercase;letter-spacing:0.1em;font-weight:600;">Have a question?</p>
+    <p style="font-size:13px;color:rgba(255,255,255,0.35);margin-top:28px;margin-bottom:10px;text-transform:uppercase;letter-spacing:0.12em;font-weight:700;">Have a question?</p>
     <div class="cta-contact">
       <a href="https://instagram.com/Yorman06" target="_blank" class="contact-btn">
         <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg>
