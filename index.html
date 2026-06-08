@@ -107,7 +107,7 @@ src="https://www.facebook.com/tr?id=990522626671542&ev=PageView&noscript=1"/></n
   .footer-links a { color: rgba(255,255,255,0.38); text-decoration: none; }
   .footer-links a:hover { color: var(--yellow); }
   @media (max-width: 680px) {
-    .hero-inner { flex-direction: column-reverse; gap: 36px; }
+    .hero-inner { flex-direction: column; gap: 36px; }
     .hero-text { text-align: center; }
     .cta-wrap { align-items: center; }
     .hero-sub { margin: 0 auto 28px; }
@@ -116,6 +116,45 @@ src="https://www.facebook.com/tr?id=990522626671542&ev=PageView&noscript=1"/></n
     .author-card { flex-direction: column; padding: 24px 20px; }
     .proof-numbers { gap: 24px; }
     nav { padding: 13px 16px; }
+  }
+  /* STICKY MOBILE BUY BAR */
+  .mobile-buy-bar { display: none; }
+  @media (max-width: 680px) {
+    .mobile-buy-bar {
+      display: flex;
+      position: fixed;
+      bottom: 0; left: 0; right: 0;
+      z-index: 200;
+      background: var(--black);
+      border-top: 2px solid var(--yellow);
+      padding: 12px 16px;
+      align-items: center;
+      justify-content: space-between;
+      gap: 12px;
+    }
+    .mobile-buy-bar .mbb-price {
+      font-family: 'Oswald', sans-serif;
+      font-size: 15px; font-weight: 600;
+      color: var(--white); line-height: 1.2; letter-spacing: 0.04em;
+    }
+    .mobile-buy-bar .mbb-price s {
+      font-size: 11px; color: rgba(255,255,255,0.35);
+      font-weight: 400; margin-right: 3px;
+    }
+    .mobile-buy-bar .mbb-sub {
+      font-size: 10px; color: rgba(255,255,255,0.45);
+      text-transform: uppercase; letter-spacing: 0.06em;
+      display: block; margin-top: 2px;
+    }
+    .mobile-buy-bar a.mbb-btn {
+      background: var(--red); color: var(--white);
+      font-family: 'Oswald', sans-serif;
+      font-size: 15px; font-weight: 600;
+      padding: 12px 20px; border-radius: 4px;
+      text-decoration: none; letter-spacing: 0.08em;
+      text-transform: uppercase; white-space: nowrap; flex-shrink: 0;
+    }
+    body { padding-bottom: 70px; }
   }
 </style>
 </head>
@@ -132,7 +171,7 @@ src="https://www.facebook.com/tr?id=990522626671542&ev=PageView&noscript=1"/></n
       <p class="hero-subhook">The food is the easy part.</p>
       <p class="hero-subhook" style="font-size: clamp(15px, 2vw, 19px); color: rgba(255,255,255,0.75); font-style: normal; font-weight: 700; margin-bottom: 12px;">Now learn what it actually takes to run the business.</p>
       <p class="hero-tagline">Real Experience. Real Numbers. Real Systems.</p>
-      <p class="hero-sub">A 39-page guide built from 5+ years of real experience running a food pop-up at farmers markets and events. No theory. No fluff. Just what actually works and what doesn't.</p>
+      <p class="hero-sub">A practical guide from a food entrepreneur who has worked farmers markets, festivals, pop-ups, catering events, and food vendor operations firsthand.</p>
       <div class="cta-wrap">
         <a href="https://cultivar4.gumroad.com/l/foodvendorplaybook?wanted=true&utm_source=website&utm_medium=landing_page&utm_campaign=fvp" onclick="fbq('track', 'InitiateCheckout')" class="hero-cta" target="_blank">Get the Playbook for $20</a>
         <span class="cta-reassurance">No subscription. One-time purchase. Instant PDF.</span>
@@ -195,8 +234,9 @@ src="https://www.facebook.com/tr?id=990522626671542&ev=PageView&noscript=1"/></n
         <p class="author-name">Yorman Sanchez</p>
         <p class="author-role">Chef &amp; Owner &middot; Cultivar Hospitality LLC &middot; ChKn M.I.A.</p>
         <div class="author-bio">
-          <p>Yorman Sanchez is a chef, entrepreneur, and owner of Cultivar Hospitality LLC. He's been in the hospitality business for over a decade, working in professional kitchens and hotels across the country before building his own food pop-up brand from the ground up.</p>
-          <p>This is the guide he wished someone had handed him before his first event.</p>
+          <p>Yorman Sanchez is a chef and entrepreneur who has spent over a decade in professional kitchens, hotels, and food vendor operations across the country.</p>
+          <p>My father immigrated to the United States as a pastry chef and eventually opened a food truck. The business failed, not because the food wasn't good, but because the operations weren't ready.</p>
+          <p>Years later, after building my own catering and food vendor business, I created this guide to help others avoid those same mistakes.</p>
         </div>
       </div>
     </div>
@@ -217,20 +257,24 @@ src="https://www.facebook.com/tr?id=990522626671542&ev=PageView&noscript=1"/></n
     <h2 class="section-title">The Financial Templates.<br>No Cost. No Catch.</h2>
     <p class="section-body">Most vendors set their prices by guessing. This spreadsheet tells you the real number: what each dish actually costs you, what you need to charge, and whether your events are making you money. Plug in your own numbers and build the structure your business needs.</p>
     <ul class="checklist">
-      <li><span class="check-icon"><svg viewBox="0 0 13 10" fill="none"><path d="M1 5l3.5 3.5L12 1" stroke="#141414" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></span><span><strong>Recipe Cost per Dish</strong> — enter ingredients for one serving, get your true food cost and minimum selling price instantly</span></li>
-      <li><span class="check-icon"><svg viewBox="0 0 13 10" fill="none"><path d="M1 5l3.5 3.5L12 1" stroke="#141414" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></span><span><strong>Menu Pricing Summary</strong> — all your dishes in one view with food cost %, profit per plate, and a status flag so you can see what's working</span></li>
-      <li><span class="check-icon"><svg viewBox="0 0 13 10" fill="none"><path d="M1 5l3.5 3.5L12 1" stroke="#141414" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></span><span><strong>Event P&amp;L</strong> — run this before every event to know your break-even before you show up, and after to see your real margin</span></li>
-      <li><span class="check-icon"><svg viewBox="0 0 13 10" fill="none"><path d="M1 5l3.5 3.5L12 1" stroke="#141414" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></span><span><strong>12-Month Cash Flow</strong> — plan your full season so you never get caught short before a big event month</span></li>
-      <li><span class="check-icon"><svg viewBox="0 0 13 10" fill="none"><path d="M1 5l3.5 3.5L12 1" stroke="#141414" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></span><span><strong>Pre-loaded with examples</strong> — Tacos, Rice &amp; Beans, Drinks, and a blank template so you can start immediately</span></li>
+      <li><span class="check-icon"><svg viewBox="0 0 13 10" fill="none"><path d="M1 5l3.5 3.5L12 1" stroke="#141414" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></span><span><strong>Recipe Cost per Dish</strong> &mdash; enter ingredients for one serving, get your true food cost and minimum selling price instantly</span></li>
+      <li><span class="check-icon"><svg viewBox="0 0 13 10" fill="none"><path d="M1 5l3.5 3.5L12 1" stroke="#141414" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></span><span><strong>Menu Pricing Summary</strong> &mdash; all your dishes in one view with food cost %, profit per plate, and a status flag</span></li>
+      <li><span class="check-icon"><svg viewBox="0 0 13 10" fill="none"><path d="M1 5l3.5 3.5L12 1" stroke="#141414" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></span><span><strong>Event P&amp;L</strong> &mdash; know your break-even before you show up, track your real margin after</span></li>
+      <li><span class="check-icon"><svg viewBox="0 0 13 10" fill="none"><path d="M1 5l3.5 3.5L12 1" stroke="#141414" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></span><span><strong>12-Month Cash Flow</strong> &mdash; plan your full season so you never get caught short</span></li>
+      <li><span class="check-icon"><svg viewBox="0 0 13 10" fill="none"><path d="M1 5l3.5 3.5L12 1" stroke="#141414" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></span><span><strong>Pre-loaded with examples</strong> &mdash; Tacos, Rice &amp; Beans, Drinks, and a blank template ready to go</span></li>
     </ul>
-    <div style="margin-top:36px;background:#FFFBEC;border:2px solid #F5C500;border-radius:10px;padding:32px 28px;display:flex;align-items:center;justify-content:space-between;gap:24px;flex-wrap:wrap;">
+    <div style="margin-top:32px;background:#FFFBEC;border:2px solid #F5C500;border-radius:10px;padding:24px;display:flex;align-items:center;justify-content:space-between;gap:16px;flex-wrap:wrap;">
       <div>
-        <p style="font-family:'Oswald',sans-serif;font-size:22px;font-weight:700;text-transform:uppercase;letter-spacing:0.04em;color:#141414;margin-bottom:4px;">Food Vendor Financial Templates</p>
-        <p style="font-size:14px;color:#555;line-height:1.5;">Excel spreadsheet &middot; 7 tabs &middot; Works in Google Sheets</p>
+        <p style="font-family:'Oswald',sans-serif;font-size:20px;font-weight:700;text-transform:uppercase;letter-spacing:0.04em;color:#141414;margin-bottom:4px;">Food Vendor Financial Templates</p>
+        <p style="font-size:13px;color:#555;">Excel spreadsheet &middot; 7 tabs &middot; Works in Google Sheets</p>
       </div>
-      <a href="https://cultivar4.gumroad.com/l/FoodFinancialTemplate" target="_blank" style="display:inline-block;background:#141414;color:#F5C500;font-family:'Oswald',sans-serif;font-size:16px;font-weight:600;padding:16px 36px;border-radius:4px;text-decoration:none;letter-spacing:0.1em;text-transform:uppercase;white-space:nowrap;" onmouseover="this.style.opacity='0.85'" onmouseout="this.style.opacity='1'">Download Free &#8594;</a>
+      <a href="https://cultivar4.gumroad.com/l/FoodFinancialTemplate" target="_blank" style="display:inline-block;background:#141414;color:#F5C500;font-family:'Oswald',sans-serif;font-size:15px;font-weight:600;padding:13px 26px;border-radius:4px;text-decoration:none;letter-spacing:0.1em;text-transform:uppercase;white-space:nowrap;">Download Free &#8594;</a>
     </div>
-    <p style="font-size:12px;color:#888;margin-top:10px;text-align:center;font-style:italic;">You will be asked for your email. That is all.</p>
+    <p style="font-size:12px;color:#888;margin-top:8px;text-align:center;font-style:italic;">You will be asked for your email. That is all.</p>
+    <div style="margin-top:24px;background:var(--black);border-radius:8px;padding:20px 22px;display:flex;align-items:center;justify-content:space-between;gap:16px;flex-wrap:wrap;">
+      <p style="font-size:14px;color:rgba(255,255,255,0.7);line-height:1.5;flex:1;min-width:200px;">Want the full playbook? 39 pages of real systems, real numbers, and everything the spreadsheet doesn&rsquo;t cover.</p>
+      <a href="https://cultivar4.gumroad.com/l/foodvendorplaybook?wanted=true&utm_source=website&utm_medium=templates_nudge&utm_campaign=fvp" onclick="fbq('track','InitiateCheckout')" target="_blank" style="display:inline-block;background:var(--red);color:var(--white);font-family:'Oswald',sans-serif;font-size:14px;font-weight:600;padding:12px 22px;border-radius:4px;text-decoration:none;letter-spacing:0.08em;text-transform:uppercase;white-space:nowrap;flex-shrink:0;">Get the Playbook &mdash; $20</a>
+    </div>
   </section>
 </div>
 <div class="cta-section dark-section">
@@ -264,5 +308,13 @@ src="https://www.facebook.com/tr?id=990522626671542&ev=PageView&noscript=1"/></n
   <p class="footer-brand">THE FOOD VENDOR <span class="script">Playbook</span></p>
   <p class="footer-links">Cultivar Hospitality LLC &nbsp;&middot;&nbsp; <a href="https://cultivar4.gumroad.com/l/foodvendorplaybook?wanted=true&utm_source=website&utm_medium=landing_page&utm_campaign=fvp" onclick="fbq('track', 'InitiateCheckout')" target="_blank">cultivar4.gumroad.com</a> &nbsp;&middot;&nbsp; <a href="mailto:cultivarhospitality@gmail.com">cultivarhospitality@gmail.com</a></p>
 </footer>
+<!-- STICKY MOBILE BUY BAR -->
+<div class="mobile-buy-bar">
+  <div>
+    <p class="mbb-price"><s>$29</s> $20</p>
+    <span class="mbb-sub">Instant PDF &middot; 39 pages</span>
+  </div>
+  <a href="https://cultivar4.gumroad.com/l/foodvendorplaybook?wanted=true&utm_source=website&utm_medium=mobile_sticky&utm_campaign=fvp" onclick="fbq('track','InitiateCheckout')" class="mbb-btn" target="_blank">Get It Now</a>
+</div>
 </body>
 </html>
