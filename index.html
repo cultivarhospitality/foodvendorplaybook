@@ -28,8 +28,8 @@ src="https://www.facebook.com/tr?id=990522626671542&ev=PageView&noscript=1"/></n
   *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
   :root { --black: #141414; --yellow: #F5C500; --red: #E63946; --white: #FFFFFF; --off: #F7F7F7; --border: #E0E0E0; --text: #1A1A1A; --mid: #555555; --light: #888888; }
   body { background: var(--white); color: var(--text); font-family: 'Lato', sans-serif; font-size: 16px; line-height: 1.6; -webkit-font-smoothing: antialiased; }
-  .hero-bg { background-color: var(--black); background-image: linear-gradient(to right, rgba(20,20,20,0.93) 40%, rgba(20,20,20,0.55) 100%), url('hero-bg.jpg'); background-size: cover; background-position: center; background-repeat: no-repeat; }
-  .dark-section { background-color: var(--black); }
+  .hero-bg { background-color: var(--black); background-image: linear-gradient(to right, rgba(20,20,20,0.92) 38%, rgba(20,20,20,0.45) 100%), url('event-1.jpg'); background-size: cover; background-position: center top; background-repeat: no-repeat; }
+  .dark-section { background-color: #F5EFE6; }
   .xo-light { background-color: var(--white); background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='240' height='240'%3E%3Ccircle cx='38' cy='38' r='14' fill='none' stroke='rgba(20,20,20,0.04)' stroke-width='2.5'/%3E%3Ccircle cx='145' cy='95' r='14' fill='none' stroke='rgba(20,20,20,0.03)' stroke-width='2.5'/%3E%3Ccircle cx='85' cy='175' r='14' fill='none' stroke='rgba(20,20,20,0.04)' stroke-width='2.5'/%3E%3C/svg%3E"); background-repeat: repeat; }
   nav { background: var(--black); padding: 15px 28px; display: flex; align-items: center; justify-content: space-between; position: sticky; top: 0; z-index: 100; border-bottom: 3px solid var(--yellow); }
   .nav-brand { font-family: 'Oswald', sans-serif; font-size: 18px; font-weight: 600; letter-spacing: 0.08em; color: var(--white); text-decoration: none; text-transform: uppercase; }
@@ -47,7 +47,8 @@ src="https://www.facebook.com/tr?id=990522626671542&ev=PageView&noscript=1"/></n
   .cta-wrap { display: flex; flex-direction: column; align-items: flex-start; gap: 10px; margin-bottom: 12px; }
   .hero-cta { display: inline-block; background: var(--red); color: var(--white); font-family: 'Oswald', sans-serif; font-size: 18px; font-weight: 600; padding: 16px 44px; border-radius: 4px; text-decoration: none; letter-spacing: 0.1em; text-transform: uppercase; transition: opacity 0.15s; }
   .hero-cta:hover { opacity: 0.87; }
-  .cta-reassurance { font-size: 12px; font-weight: 700; color: rgba(255,255,255,0.9); letter-spacing: 0.06em; background: rgba(255,255,255,0.1); border: 1px solid rgba(255,255,255,0.2); padding: 5px 16px; border-radius: 20px; display: inline-block; text-transform: uppercase; }
+  .cta-reassurance { font-size: 12px; font-weight: 700; color: var(--mid); letter-spacing: 0.06em; background: rgba(20,20,20,0.06); border: 1px solid rgba(20,20,20,0.15); padding: 5px 16px; border-radius: 20px; display: inline-block; text-transform: uppercase; }
+  .hero .cta-reassurance { color: rgba(255,255,255,0.9); background: rgba(255,255,255,0.1); border-color: rgba(255,255,255,0.2); }
   .hero-price { display: block; margin-top: 4px; font-size: 13px; font-weight: 700; color: rgba(255,255,255,0.7); }
   .hero-price s { color: rgba(255,255,255,0.4); font-weight: 400; }
   .hero-cover { flex-shrink: 0; }
@@ -74,28 +75,28 @@ src="https://www.facebook.com/tr?id=990522626671542&ev=PageView&noscript=1"/></n
   .for-you-list li { display: flex; gap: 14px; align-items: flex-start; padding: 15px 0; border-bottom: 1px solid var(--border); font-size: 16px; color: var(--text); line-height: 1.5; }
   .for-you-list li:last-child { border-bottom: none; }
   .arrow { color: var(--red); font-size: 18px; line-height: 1.5; flex-shrink: 0; font-weight: 700; }
-  .author-card { background: var(--black); border-radius: 12px; padding: 36px 32px; display: flex; gap: 28px; align-items: flex-start; margin-top: 8px; }
+  .author-card { background: #FFFBF0; border: 2px solid #F5C500; border-radius: 12px; padding: 36px 32px; display: flex; gap: 28px; align-items: flex-start; margin-top: 8px; }
   .author-avatar { width: 100px; height: 100px; border-radius: 50%; background: var(--yellow); display: flex; align-items: center; justify-content: center; font-family: 'Oswald', sans-serif; font-size: 28px; color: var(--black); flex-shrink: 0; border: 3px solid var(--yellow); overflow: hidden; }
   .author-avatar img { width: 100%; height: 100%; object-fit: cover; object-position: center top; border-radius: 50%; }
-  .author-name { font-family: 'Oswald', sans-serif; font-size: 24px; font-weight: 600; letter-spacing: 0.04em; color: var(--white); margin-bottom: 4px; }
-  .author-role { font-size: 11px; font-weight: 700; color: var(--yellow); letter-spacing: 0.12em; text-transform: uppercase; margin-bottom: 14px; }
-  .author-bio { font-size: 15px; color: rgba(255,255,255,0.65); line-height: 1.7; }
+  .author-name { font-family: 'Oswald', sans-serif; font-size: 24px; font-weight: 600; letter-spacing: 0.04em; color: var(--black); margin-bottom: 4px; }
+  .author-role { font-size: 11px; font-weight: 700; color: #B8860B; letter-spacing: 0.12em; text-transform: uppercase; margin-bottom: 14px; }
+  .author-bio { font-size: 15px; color: var(--mid); line-height: 1.7; }
   .author-bio p + p { margin-top: 12px; }
   .get-grid { display: flex; gap: 12px; flex-wrap: wrap; margin-top: 28px; }
   .get-pill { background: var(--white); border: 2px solid var(--black); border-radius: 40px; padding: 10px 22px; font-size: 14px; font-weight: 700; color: var(--black); display: flex; align-items: center; gap: 8px; }
   .cta-section { padding: 88px 24px; text-align: center; position: relative; overflow: hidden; }
   .cta-inner { max-width: 560px; margin: 0 auto; position: relative; z-index: 1; }
-  .cta-section .section-eyebrow { color: var(--yellow); }
-  .cta-section .section-title { color: var(--white); margin-bottom: 12px; }
-  .price-line { font-size: 16px; color: rgba(255,255,255,0.65); margin-bottom: 8px; line-height: 1.7; }
-  .price-sub { font-size: 13px; font-weight: 700; color: rgba(255,255,255,0.5); margin-bottom: 32px; }
-  .price-sub s { font-weight: 400; color: rgba(255,255,255,0.3); }
+  .cta-section .section-eyebrow { color: var(--red); }
+  .cta-section .section-title { color: var(--black); margin-bottom: 12px; }
+  .price-line { font-size: 16px; color: var(--mid); margin-bottom: 8px; line-height: 1.7; }
+  .price-sub { font-size: 13px; font-weight: 700; color: var(--light); margin-bottom: 32px; }
+  .price-sub s { font-weight: 400; color: #bbb; }
   .big-cta-wrap { display: flex; flex-direction: column; align-items: center; gap: 10px; margin-bottom: 8px; }
   .big-cta { display: inline-block; background: var(--red); color: var(--white); font-family: 'Oswald', sans-serif; font-size: 20px; font-weight: 600; padding: 18px 56px; border-radius: 4px; text-decoration: none; letter-spacing: 0.1em; text-transform: uppercase; transition: opacity 0.15s; }
   .big-cta:hover { opacity: 0.87; }
   .cta-contact { display: flex; justify-content: center; gap: 16px; flex-wrap: wrap; margin-top: 28px; }
-  .contact-btn { display: inline-flex; align-items: center; gap: 9px; padding: 12px 22px; border-radius: 40px; font-size: 14px; font-weight: 700; text-decoration: none; border: 2px solid rgba(255,255,255,0.2); color: var(--white); background: rgba(255,255,255,0.07); transition: all 0.15s; }
-  .contact-btn:hover { border-color: var(--yellow); color: var(--yellow); }
+  .contact-btn { display: inline-flex; align-items: center; gap: 9px; padding: 12px 22px; border-radius: 40px; font-size: 14px; font-weight: 700; text-decoration: none; border: 2px solid rgba(20,20,20,0.2); color: var(--black); background: rgba(20,20,20,0.06); transition: all 0.15s; }
+  .contact-btn:hover { border-color: var(--red); color: var(--red); }
   .contact-btn svg { width: 16px; height: 16px; flex-shrink: 0; }
   .red-stripe { background: var(--red); padding: 20px 28px; text-align: center; }
   .red-stripe p { font-family: 'Oswald', sans-serif; font-size: clamp(14px, 2.5vw, 18px); font-weight: 600; letter-spacing: 0.1em; text-transform: uppercase; color: var(--white); margin-bottom: 2px; }
@@ -125,6 +126,23 @@ src="https://www.facebook.com/tr?id=990522626671542&ev=PageView&noscript=1"/></n
     .mobile-buy-bar .mbb-sub { font-size: 10px; color: rgba(255,255,255,0.45); text-transform: uppercase; letter-spacing: 0.06em; display: block; margin-top: 2px; }
     .mobile-buy-bar a.mbb-btn { background: var(--red); color: var(--white); font-family: 'Oswald', sans-serif; font-size: 15px; font-weight: 600; padding: 12px 20px; border-radius: 4px; text-decoration: none; letter-spacing: 0.08em; text-transform: uppercase; white-space: nowrap; flex-shrink: 0; }
     body { padding-bottom: 70px; }
+  }
+  /* ── Photo gallery ── */
+  .photo-strip { background: #F5EFE6; padding: 56px 24px; }
+  .photo-strip-inner { max-width: 1100px; margin: 0 auto; }
+  .photo-strip-header { text-align: center; margin-bottom: 28px; }
+  .photo-strip-header .eyebrow { font-size: 10px; font-weight: 700; letter-spacing: 0.16em; text-transform: uppercase; color: var(--red); margin-bottom: 8px; display: block; }
+  .photo-strip-header h2 { font-family: 'Oswald', sans-serif; font-size: clamp(22px, 4vw, 36px); font-weight: 700; text-transform: uppercase; letter-spacing: 0.04em; color: var(--black); line-height: 1; }
+  .photo-grid { display: grid; grid-template-columns: 1fr 1fr 1fr; grid-template-rows: 260px 260px; gap: 10px; }
+  .photo-item { overflow: hidden; border-radius: 8px; background: #d5cfc8; position: relative; }
+  .photo-item img { width: 100%; height: 100%; object-fit: cover; display: block; transition: transform 0.35s ease; }
+  .photo-item:hover img { transform: scale(1.04); }
+  .photo-item.tall { grid-row: span 2; }
+  .photo-caption { text-align: center; margin-top: 16px; font-size: 13px; color: var(--mid); font-style: italic; letter-spacing: 0.02em; }
+  @media (max-width: 680px) {
+    .photo-grid { grid-template-columns: 1fr 1fr; grid-template-rows: auto; }
+    .photo-item.tall { grid-row: span 1; }
+    .photo-item { height: 170px; }
   }
 </style>
 </head>
@@ -160,6 +178,38 @@ src="https://www.facebook.com/tr?id=990522626671542&ev=PageView&noscript=1"/></n
     <div class="proof-num"><span class="num">$10,882</span><span class="sub">Strong weekend, broken down line by line</span></div>
     <div class="proof-num"><span class="num">$521</span><span class="sub">Slow weekend, broken down line by line</span></div>
     <div class="proof-num"><span class="num">39</span><span class="sub">Pages of no-fluff real systems</span></div>
+  </div>
+</div>
+<!-- ── Photo gallery ── -->
+<div class="photo-strip">
+  <div class="photo-strip-inner">
+    <div class="photo-strip-header">
+      <span class="eyebrow">Behind the booth</span>
+      <h2>This is what real events look like.</h2>
+    </div>
+    <div class="photo-grid">
+      <!-- Tall left column — save your best action shot as event-1.jpg -->
+      <div class="photo-item tall">
+        <img src="event-1.jpg" alt="ChKn MIA team at a food festival">
+      </div>
+      <!-- Top-center -->
+      <div class="photo-item">
+        <img src="event-2.jpg" alt="Plated bites ready to serve">
+      </div>
+      <!-- Top-right -->
+      <div class="photo-item">
+        <img src="event-3.jpg" alt="ChKn MIA sandwiches at an event">
+      </div>
+      <!-- Bottom-center -->
+      <div class="photo-item">
+        <img src="event-4.jpg" alt="Team cooking on the flat top">
+      </div>
+      <!-- Bottom-right -->
+      <div class="photo-item">
+        <img src="event-5.jpg" alt="Lost in the Sauce — ChKn MIA branded merch">
+      </div>
+    </div>
+    <p class="photo-caption">Real events. Real team. ChKn M.I.A. — hand breaded, real chicken, real love.</p>
   </div>
 </div>
 <div class="sections-wrap xo-light">
@@ -241,8 +291,8 @@ src="https://www.facebook.com/tr?id=990522626671542&ev=PageView&noscript=1"/></n
       <a href="https://cultivar4.gumroad.com/l/FoodFinancialTemplate" target="_blank" style="display:inline-block;background:#141414;color:#F5C500;font-family:'Oswald',sans-serif;font-size:15px;font-weight:600;padding:13px 26px;border-radius:4px;text-decoration:none;letter-spacing:0.1em;text-transform:uppercase;white-space:nowrap;">Download Free &#8594;</a>
     </div>
     <p style="font-size:12px;color:#888;margin-top:8px;text-align:center;font-style:italic;">You will be asked for your email. That is all.</p>
-    <div style="margin-top:24px;background:var(--black);border-radius:8px;padding:20px 22px;display:flex;align-items:center;justify-content:space-between;gap:16px;flex-wrap:wrap;">
-      <p style="font-size:14px;color:rgba(255,255,255,0.7);line-height:1.5;flex:1;min-width:200px;">Want the full playbook? 39 pages of real systems, real numbers, and everything the spreadsheet doesn&rsquo;t cover.</p>
+    <div style="margin-top:24px;background:#FFFBF0;border:2px solid #F5C500;border-radius:8px;padding:20px 22px;display:flex;align-items:center;justify-content:space-between;gap:16px;flex-wrap:wrap;">
+      <p style="font-size:14px;color:var(--mid);line-height:1.5;flex:1;min-width:200px;">Want the full playbook? 39 pages of real systems, real numbers, and everything the spreadsheet doesn&rsquo;t cover.</p>
       <a href="https://cultivar4.gumroad.com/l/foodvendorplaybook?wanted=true&utm_source=website&utm_medium=templates_nudge&utm_campaign=fvp" onclick="fbq('track','InitiateCheckout')" target="_blank" style="display:inline-block;background:var(--red);color:var(--white);font-family:'Oswald',sans-serif;font-size:14px;font-weight:600;padding:12px 22px;border-radius:4px;text-decoration:none;letter-spacing:0.08em;text-transform:uppercase;white-space:nowrap;flex-shrink:0;">Get the Playbook &mdash; $20</a>
     </div>
   </section>
@@ -257,7 +307,7 @@ src="https://www.facebook.com/tr?id=990522626671542&ev=PageView&noscript=1"/></n
       <a href="https://cultivar4.gumroad.com/l/foodvendorplaybook?wanted=true&utm_source=website&utm_medium=landing_page&utm_campaign=fvp" onclick="fbq('track', 'InitiateCheckout')" class="big-cta" target="_blank">Get the Playbook for $20</a>
       <span class="cta-reassurance">No subscription. One-time purchase. Instant PDF.</span>
     </div>
-    <p style="font-size:13px;color:rgba(255,255,255,0.35);margin-top:28px;margin-bottom:10px;text-transform:uppercase;letter-spacing:0.12em;font-weight:700;">Have a question?</p>
+    <p style="font-size:13px;color:rgba(20,20,20,0.45);margin-top:28px;margin-bottom:10px;text-transform:uppercase;letter-spacing:0.12em;font-weight:700;">Have a question?</p>
     <div class="cta-contact">
       <a href="https://instagram.com/Yorman06" target="_blank" class="contact-btn">
         <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg>
